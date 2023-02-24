@@ -73,11 +73,18 @@ export const CardInfo = styled.p`
   font-style: 2rem;
   line-height: 24px;
   text-align: justify;
+  min-height:96px;
   @media ${(props) => props.theme.breakpoints.sm} {
     padding:.3rem
+  }
+  `;
   
-}
-`;
+  export const ShowMoreBtn = styled.button`
+  background-color: #9cc9e3;
+  padding: 0.2rem .8rem;
+  border-radius: 8px;
+  cursor: pointer;
+`
 
 
 export const UtilityList = styled.ul`
