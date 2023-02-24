@@ -22,6 +22,11 @@ export const ImageContainer = styled.div`
     margin-top: 16px;
   }
 `
+export const IconsContainer = styled.div`
+  display:flex;
+  gap: 8px;
+  padding-bottom:5px;
+`
 
 export const MainImage = styled.img`
   width: 100%;
@@ -82,6 +87,8 @@ export const ListTitle = styled.h4`
 `
 
 export const ListParagraph = styled.p`
+  display: flex;
+  flex-direction: column;
   font-size: 18px;
   line-height: 30px;
   color: rgba(255, 255, 255, 0.75);
