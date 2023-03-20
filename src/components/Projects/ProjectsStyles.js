@@ -78,8 +78,8 @@ export const CardInfo = styled.p`
     padding:.3rem
   }
   `;
-  
-  export const ShowMoreBtn = styled.button`
+
+export const ShowMoreBtn = styled.button`
   background-color: #9cc9e3;
   padding: 0.2rem .8rem;
   border-radius: 8px;
@@ -111,7 +111,9 @@ transition: 0.5s;
 export const TagList = styled.ul`
 display: flex;
 justify-content: space-around;
+flex-warp:warp;
 padding: 2rem;
+gap:1rem;
 `
 export const Tag = styled.li`
 color: #d8bfbf;
