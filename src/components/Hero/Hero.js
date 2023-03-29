@@ -12,7 +12,7 @@ const Hero = () => (
         My Personal Portfolio
       </SectionTitle>
       <SectionText>
-        My name is Ofer Gavri and i'm a Full-Stack developer and my purpose is to elevate Websites to the Next Level !
+        My name is Ofer Gavriel and i'm a Full-Stack developer and my purpose is to elevate Websites to the Next Level !
       </SectionText>
       <Button onClick={() => window.location = 'https://github.com/oferGavrilov'}>Learn More</Button>
     </LeftSection>
