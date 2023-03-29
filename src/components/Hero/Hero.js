@@ -14,7 +14,7 @@ const Hero = () => (
       <SectionText>
         My name is Ofer Gavriel and i'm a Full-Stack developer and my purpose is to elevate Websites to the Next Level !
       </SectionText>
-      <Button onClick={() => window.location = 'https://github.com/oferGavrilov'}>Learn More</Button>
+      <Button onClick={() => window.open('https://github.com/oferGavrilov' , '_blank')}>Learn More</Button>
     </LeftSection>
   </Section>
 )

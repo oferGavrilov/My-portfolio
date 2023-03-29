@@ -1,5 +1,6 @@
 import React from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import { CgMail } from 'react-icons/cg'
 
 import { SocialIcons } from '../Header/HeaderStyles';
 import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
@@ -14,7 +15,7 @@ const Footer = () => {
         </LinkColumn>
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>
-          <LinkItem href='mailto:ofergavri@gmail.com'>ofergavri@gmail.com</LinkItem>
+          <LinkItem href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ofergavri@gmail.com' target={'_blank'}>ofergavri@gmail.com</LinkItem>
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
@@ -28,8 +29,8 @@ const Footer = () => {
           <SocialIcons href='https://www.linkedin.com/in/ofergavrilov/'>
             <AiFillLinkedin size={'3rem'} />
           </SocialIcons>
-          <SocialIcons href='https://github.com/oferGavrilov'>
-            <AiFillInstagram size={'3rem'} />
+          <SocialIcons href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ofergavri@gmail.com' target={'_blank'}>
+            <CgMail size={'3rem'} />
           </SocialIcons>
         </SocialContainer>
       </SocialIconsContainer>

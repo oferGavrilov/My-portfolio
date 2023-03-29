@@ -1,7 +1,8 @@
-import Link from 'next/link';
-import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
-import { DiCssdeck } from 'react-icons/di';
+import Link from 'next/link'
+import React from 'react'
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+import { DiCssdeck } from 'react-icons/di'
+import { CgMail } from 'react-icons/cg'
 
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
 
@@ -32,14 +33,14 @@ const Header = () => (
       </li>
     </Div2>
     <Div3>
-      <SocialIcons href='https://github.com/oferGavrilov'>
+      <SocialIcons href='https://github.com/oferGavrilov' target={'_blank'}>
         <AiFillGithub size={'3rem'} />
       </SocialIcons>
-      <SocialIcons href='https://www.linkedin.com/in/ofergavrilov/'>
+      <SocialIcons href='https://www.linkedin.com/in/ofergavrilov/' target={'_blank'}>
         <AiFillLinkedin size={'3rem'} />
       </SocialIcons>
-      <SocialIcons href='https://github.com/oferGavrilov'>
-        <AiFillInstagram size={'3rem'} />
+      <SocialIcons href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ofergavri@gmail.com' target={'_blank'}>
+        <CgMail size={'3rem'} />
       </SocialIcons>
     </Div3>
   </Container>
