@@ -24,6 +24,7 @@ const Technologies = () => (
           <ListParagraph>
             <span>Experience with</span>
             <span>React.js</span>
+            <span>NextJS</span>
             <span>Angular</span>
           </ListParagraph>
         </ListContainer>
@@ -39,7 +40,8 @@ const Technologies = () => (
           <ListParagraph>
             <span>Experience with</span>
             <span>Node.js</span>
-            <span>MongoDB</span>
+            <span>Express</span>
+            <span>NestJS</span>
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -50,11 +52,27 @@ const Technologies = () => (
           <SiAdobexd size="3rem" />
         </IconsContainer>
         <ListContainer>
-          <ListTitle>UI & UX</ListTitle>
+          <ListTitle>Styles</ListTitle>
           <ListParagraph>
             <span>Experience with</span>
-            <span>Figma</span>
-            <span>AdobeXd</span>
+            <span>CSS</span>
+            <span>SASS/SCSS</span>
+            <span>Tailwind CSS</span>
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+
+      <ListItem>
+        <IconsContainer>
+          <FaNodeJs size="3rem" />
+          <SiMongodb size="3rem" />
+        </IconsContainer>
+        <ListContainer>
+          <ListTitle>Storage & Queue</ListTitle>
+          <ListParagraph>
+            <span>Experience with</span>
+            <span>MySQL</span>
+            <span>MongoDB</span>
           </ListParagraph>
         </ListContainer>
       </ListItem>
