@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image'
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { IconsContainer, List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
+import dynamic from "next/dynamic";
 
 const Technologies = () => (
   <Section id='tech'>
@@ -14,9 +15,9 @@ const Technologies = () => (
     <List>
       <ListItem>
         <IconsContainer>
-          <Image src="/images/react.png" width="30" height="30" />
-          <Image src="/images/next.png" width="30" height="30" />
-          <Image src="/images/angular.png" width="30" height="30" />
+          <Image alt="" src="/images/react.png" width="30" height="30" />
+          <Image alt="" src="/images/next.png" width="30" height="30" />
+          <Image alt="" src="/images/angular.png" width="30" height="30" />
         </IconsContainer>
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
@@ -31,10 +32,10 @@ const Technologies = () => (
 
       <ListItem>
         <IconsContainer>
-          <Image src="/images/nodejs.png" width="30" height="30" />
-          <Image src="/images/express.png" width="30" height="30" />
-          <Image src="/images/nestjs.png" width="30" height="30" />
-          <Image src="/images/springboot.png" width="30" height="30" />
+          <Image alt="" src="/images/nodejs.png" width="30" height="30" />
+          <Image alt="" src="/images/express.png" width="30" height="30" />
+          <Image alt="" src="/images/nestjs.png" width="30" height="30" />
+          <Image alt="" src="/images/springboot.png" width="30" height="30" />
         </IconsContainer>
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
@@ -50,9 +51,9 @@ const Technologies = () => (
 
       <ListItem>
         <IconsContainer>
-          <Image src="/images/css.png" width="30" height="30" />
-          <Image src="/images/scss.png" width="30" height="30" />
-          <Image src="/images/tailwind.png" width="30" height="30" />
+          <Image alt="" src="/images/css.png" width="30" height="30" />
+          <Image alt="" src="/images/scss.png" width="30" height="30" />
+          <Image alt="" src="/images/tailwind.png" width="30" height="30" />
         </IconsContainer>
         <ListContainer>
           <ListTitle>Styles</ListTitle>
@@ -67,8 +68,8 @@ const Technologies = () => (
 
       <ListItem>
         <IconsContainer>
-          <Image src="/images/mongodb.png" width="30" height="30" />
-          <Image src="/images/mysql.png" width="30" height="30" />
+          <Image alt="" src="/images/mongodb.png" width="30" height="30" />
+          <Image alt="" src="/images/mysql.png" width="30" height="30" />
         </IconsContainer>
         <ListContainer>
           <ListTitle>Storage & Queue</ListTitle>
@@ -82,9 +83,9 @@ const Technologies = () => (
 
       <ListItem>
         <IconsContainer>
-          <Image src="/images/javascript.png" width="30" height="30" />
-          <Image src="/images/typescript.png" width="30" height="30" />
-          <Image src="/images/java.png" width="30" height="30" />
+          <Image alt="" src="/images/javascript.png" width="30" height="30" />
+          <Image alt="" src="/images/typescript.png" width="30" height="30" />
+          <Image alt="" src="/images/java.png" width="30" height="30" />
         </IconsContainer>
         <ListContainer>
           <ListTitle>Programming Language</ListTitle>
@@ -100,4 +101,4 @@ const Technologies = () => (
   </Section>
 );
 
-export default Technologies;
+export default dynamic(() => Promise.resolve(Technologies), { ssr: false });

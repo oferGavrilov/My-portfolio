@@ -86,7 +86,7 @@ export const ListTitle = styled.h4`
 }
 `
 
-export const ListParagraph = styled.p`
+export const ListParagraph = styled.div`
   display: flex;
   flex-direction: column;
   font-size: 18px;

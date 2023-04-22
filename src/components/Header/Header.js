@@ -3,6 +3,8 @@ import React from 'react'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { DiCssdeck } from 'react-icons/di'
 import { CgMail } from 'react-icons/cg'
+import dynamic from "next/dynamic";
+
 
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
 
@@ -44,4 +46,6 @@ const Header = () => (
   </Container>
 )
 
-export default Header;
+
+export default dynamic(() => Promise.resolve(Header), { ssr: false });
+

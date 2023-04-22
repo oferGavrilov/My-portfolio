@@ -14,7 +14,7 @@ export const projects = [
     image: '/images/airbnb.png',
     tags: ['Angular', 'Rxjs', 'TypeScript', 'Node.js', 'Express', 'MongoDB'],
     source: 'https://github.com/oferGavrilov/AirBNB-clone',
-    visit: 'https://airbnb-rktw.onrender.com/',
+    visit: 'https://airpnp.azurewebsites.net/#/640f1a201c1c4cc4add67107',
     id: 2,
   },
   {

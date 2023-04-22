@@ -67,7 +67,7 @@ export const DropDownItemTitle = styled.h2`
   text-align: start;
 `
 
-export const DropDownItemDesc = styled.p`
+export const DropDownItemDesc = styled.div`
   color: #0f1624;
   opacity: 0.5;
   font-size: 14px;

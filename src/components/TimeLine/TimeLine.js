@@ -6,7 +6,7 @@ import { projects } from '../../constants/constants';
 
 const TOTAL_CAROUSEL_COUNT = projects.length;
 
-function Timeline() {
+export default function Timeline() {
   const [activeItem, setActiveItem] = useState(0);
   const carouselRef = useRef();
 
@@ -116,4 +116,3 @@ function Timeline() {
   );
 };
 
-export default Timeline;

@@ -54,7 +54,7 @@ export const SectionTitle = styled.h2`
   }
 `
 
-export const SectionText = styled.p`
+export const SectionText = styled.div`
   max-width: 800px;
   font-size: 24px;
   line-height: 40px;
@@ -98,7 +98,7 @@ export const SectionDivider = styled.div`
     height: 2px;
   }
 `
-export const SectionSubText = styled.p`
+export const SectionSubText = styled.div`
   max-width: 800px;
   font-weight: 300;
   font-size: 18px;
