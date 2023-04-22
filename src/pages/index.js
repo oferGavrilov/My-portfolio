@@ -10,15 +10,16 @@ const Home = () => {
   return (
     // <Layout>
     <>
-      {/* <Section grid>
-        <Hero />
-        <BgAnimation />
-      </Section>
-      <Projects />
-       <Technologies />
-      <Timeline /> */}
+     <div>yes</div>
     </>
-      // </Layout>
+      // <Section grid>//
+        // <Hero />
+        // <BgAnimation />
+      //</Section> //
+      // <Projects /> */}
+      //* <Technologies /> */}
+    // </Layout>
+    // <Timeline /> */ }
   );
 };
 
