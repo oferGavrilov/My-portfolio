@@ -1,7 +1,8 @@
 import React from 'react';
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
+import { DiReact } from 'react-icons/di';
 import { FaAngular, FaNodeJs } from 'react-icons/fa'
-import { SiMongodb , SiFigma , SiAdobexd } from 'react-icons/si'
+import { SiNestjs } from 'react-icons/si'
+import { SiMongodb, SiFigma, SiAdobexd } from 'react-icons/si'
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { IconsContainer, List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
@@ -16,8 +17,9 @@ const Technologies = () => (
     <List>
       <ListItem>
         <IconsContainer>
-          <DiReact size="3rem" />
-          <FaAngular size="3rem" />
+          <img src="images/react.png" width="30" height="30" />
+          <img src="images/next.png" width="30" height="30" />
+          <img src="images/angular.png" width="30" height="30" />
         </IconsContainer>
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
@@ -32,8 +34,10 @@ const Technologies = () => (
 
       <ListItem>
         <IconsContainer>
-          <FaNodeJs size="3rem" />
-          <SiMongodb size="3rem" />
+          <img src="images/nodejs.png" width="30" height="30" />
+          <img src="images/express.png" width="30" height="30" />
+          <img src="images/nestjs.png" width="30" height="30" />
+          <img src="images/springboot.png" width="30" height="30" />
         </IconsContainer>
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
@@ -42,14 +46,16 @@ const Technologies = () => (
             <span>Node.js</span>
             <span>Express</span>
             <span>NestJS</span>
+            <span>Spring Boot</span>
           </ListParagraph>
         </ListContainer>
       </ListItem>
 
       <ListItem>
         <IconsContainer>
-          <SiFigma size="3rem" />
-          <SiAdobexd size="3rem" />
+          <img src="images/css.png" width="30" height="30" />
+          <img src="images/scss.png" width="30" height="30" />
+          <img src="images/tailwind.png" width="30" height="30" />
         </IconsContainer>
         <ListContainer>
           <ListTitle>Styles</ListTitle>
@@ -64,8 +70,8 @@ const Technologies = () => (
 
       <ListItem>
         <IconsContainer>
-          <FaNodeJs size="3rem" />
-          <SiMongodb size="3rem" />
+          <img src="images/mongodb.png" width="30" height="30" />
+          <img src="images/mysql.png" width="30" height="30" />
         </IconsContainer>
         <ListContainer>
           <ListTitle>Storage & Queue</ListTitle>
@@ -73,6 +79,23 @@ const Technologies = () => (
             <span>Experience with</span>
             <span>MySQL</span>
             <span>MongoDB</span>
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+
+      <ListItem>
+        <IconsContainer>
+          <img src="images/javascript.png" width="30" height="30" />
+          <img src="images/typescript.png" width="30" height="30" />
+          <img src="images/java.png" width="30" height="30" />
+        </IconsContainer>
+        <ListContainer>
+          <ListTitle>Programming Language</ListTitle>
+          <ListParagraph>
+            <span>Experience with</span>
+            <span>Javascript</span>
+            <span>Typescript</span>
+            <span>Java</span>
           </ListParagraph>
         </ListContainer>
       </ListItem>
