@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
-    "start": "next start"
+    "start": "next --openssl-legacy-provider start"
   },
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
