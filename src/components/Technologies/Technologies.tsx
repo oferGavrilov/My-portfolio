@@ -15,9 +15,9 @@ const Technologies = () => (
     <List>
       <ListItem>
         <IconsContainer>
-          <Image alt="" src="/images/react.png" width="30" height="30" />
-          <Image alt="" src="/images/next.png" width="30" height="30" />
-          <Image alt="" src="/images/angular.png" width="30" height="30" />
+          <Image alt="react" src="/images/react.png" width="30" height="30" />
+          <Image alt="next" src="/images/next.png" width="30" height="30" />
+          <Image alt="angular" src="/images/angular.png" width="30" height="30" />
         </IconsContainer>
         <ListContainer>
           <ListTitle>Front-End</ListTitle>

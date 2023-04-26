@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub , AiFillLinkedin } from 'react-icons/ai';
 import { CgMail } from 'react-icons/cg'
 
 import { SocialIcons } from '../Header/HeaderStyles';

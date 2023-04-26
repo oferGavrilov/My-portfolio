@@ -3,12 +3,16 @@ import Hero from '../components/Hero/Hero';
 import Projects from '../components/Projects/Projects';
 import Technologies from '../components/Technologies/Technologies';
 import Timeline from '../components/TimeLine/TimeLine';
-import Layout  from '../layout/Layout';
+import Layout from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
+import Loader from '../components/Loader/Loader'
+import { useState } from 'react';
 
 const Home = () => {
+  const [isLoading, setIsLoading] = useState(true)
   return (
-    <Layout>
+    <>
+    {!isLoading && <Layout>
       <Section grid>
         <Hero />
         <BgAnimation />
@@ -16,7 +20,9 @@ const Home = () => {
       <Projects />
       <Technologies />
       <Timeline />
-    </Layout>
+    </Layout>}
+    {isLoading && <Loader isLoading={isLoading} setIsLoading={setIsLoading} />}
+    </>
   );
 };
 

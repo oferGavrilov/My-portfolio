@@ -1,10 +1,15 @@
 import { useState } from "react";
 import { ShowMoreBtn } from "./ProjectsStyles";
 
-export function ProjectDescription({ txt, length }) {
+interface Props {
+    txt: string
+    length: number
+}
+
+export function ProjectDescription({ txt, length }: Props) {
     const [isShowMore, setIsShowMore] = useState(false)
 
-    function getTxtToShow(txt, length) {
+    function getTxtToShow(txt: string, length: number) {
         return (txt.length < length || isShowMore) ? txt : txt.substring(0, length + 1) + '...'
     }
 

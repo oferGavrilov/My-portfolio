@@ -8,7 +8,8 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
+    
+    scroll-behavior: smooth !important;
     scrollbar-width: thin;
     scrollbar-color: #878787 #D9D9D9;
   
