@@ -4,6 +4,7 @@ import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag,
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 import { ProjectDescription } from './ProjectDescription';
+import Link from 'next/link';
 
 const Projects = () => (
   <Section nopadding id="projects">
@@ -12,7 +13,9 @@ const Projects = () => (
     <GridContainer>
       {projects.map(({ id, image, title, description, tags, source, visit }) => (
         <BlogCard key={id}>
-          <Img src={image} />
+          {/* <Link href={`/details?id=${id}`}> */}
+            <Img src={image} />
+          {/* </Link> */}
           <TitleContent>
             <HeaderThree  >{title}</HeaderThree>
             <Hr />

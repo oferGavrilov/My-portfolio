@@ -1,36 +1,36 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react'
 
-import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
-import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { projects } from '../../constants/constants';
+import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles'
+import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents'
+import { projects } from '../../constants/constants'
 
-const TOTAL_CAROUSEL_COUNT = projects.length;
+const TOTAL_CAROUSEL_COUNT = projects.length
 
-export default function Timeline() {
-  const [activeItem, setActiveItem] = useState(0);
-  const carouselRef = useRef();
+export default function Timeline () {
+  const [activeItem, setActiveItem] = useState(0)
+  const carouselRef = useRef()
 
   const scroll = (node, left) => {
-    return node.scrollTo({ left, behavior: 'smooth' });
+    return node.scrollTo({ left, behavior: 'smooth' })
   }
 
   const handleClick = (ev, idx) => {
     console.log(idx)
-    ev.preventDefault();
+    ev.preventDefault()
 
     if (carouselRef.current) {
       console.log(carouselRef.current)
-      const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * (idx / projects.length));
+      const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * (idx / projects.length))
 
-      scroll(carouselRef.current, scrollLeft);
+      scroll(carouselRef.current, scrollLeft)
     }
   }
 
   const handleScroll = () => {
     if (carouselRef.current) {
-      const index = Math.round((carouselRef.current.scrollLeft / (carouselRef.current.scrollWidth * 0.7)) * projects.length);
+      const index = Math.round((carouselRef.current.scrollLeft / (carouselRef.current.scrollWidth * 0.7)) * projects.length)
 
-      setActiveItem(index);
+      setActiveItem(index)
     }
   }
 
@@ -38,17 +38,17 @@ export default function Timeline() {
   // // avoids a bug where content is covered up if coming from smaller screen
   useEffect(() => {
     const handleResize = () => {
-      scroll(carouselRef.current, 0);
+      scroll(carouselRef.current, 0)
     }
 
-    window.addEventListener('resize', handleResize);
-  }, []);
+    window.addEventListener('resize', handleResize)
+  }, [])
 
   return (
     <Section id='about'>
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        My name is Ofer Gavri and i'm a Full-Stack developer and my purpose is to elevate Websites to the Next Level !
+        My name is Ofer Gavri and i&apos;m a Full-Stack developer and my purpose is to elevate Websites to the Next Level !
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
@@ -113,6 +113,5 @@ export default function Timeline() {
         ))}
       </CarouselButtons>
     </Section>
-  );
-};
-
+  )
+}
