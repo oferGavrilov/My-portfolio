@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+      /* Header */
+      .navigate-link {
+            @apply text-3xl leading-8 text-blue-300 transition-colors duration-500 hover:text-white;
+      }
+
+      .social-icon {
+            @apply transition duration-300 text-white rounded-full p-2 hover:bg-[#212d45] hover:scale-125;
+      }
+
+      .slide-bottom {
+            @apply sticky py-4 -top-10 z-50 flex w-24 justify-center  ;
+            margin: auto;
+            background: rgb(48, 44, 45, 0.8);
+            border-radius: 10px;
+            transition: all .3s ease-out;
+            -webkit-animation: slide-bottom 0.8s cubic-bezier(0.680, -0.550, 0.265, 1.550) 1s both;
+            animation: slide-bottom 0.8s cubic-bezier(0.680, -0.550, 0.265, 1.550) 1s both;
+      }
+      .slide-bottom:hover {
+            @apply bg-[#242424];
+      }
+}
+
+
+@-webkit-keyframes slide-bottom {
+      0% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+                opacity: 0;
+      }
+      50% {
+            -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+            opacity: 1;
+      }
+      100% {
+        -webkit-transform: translateY(20px);
+                transform: translateY(20px);
+      }
+}
+@keyframes slide-bottom {
+      0% {
+            opacity: 0;
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+      }
+      50% {
+            opacity: 1;
+            -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+      }
+      100% {
+        -webkit-transform: translateY(20px);
+                transform: translateY(20px);
+      }
+    }
+    

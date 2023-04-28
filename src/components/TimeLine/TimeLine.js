@@ -11,7 +11,8 @@ export default function Timeline () {
   const carouselRef = useRef()
 
   const scroll = (node, left) => {
-    return node.scrollTo({ left, behavior: 'smooth' })
+    if (!node) return
+    return node?.scrollTo({ left, behavior: 'smooth' })
   }
 
   const handleClick = (ev, idx) => {

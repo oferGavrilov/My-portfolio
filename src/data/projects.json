@@ -1,8 +1,9 @@
 [
       {
             "title": "My-Day",
+            "name": "myday",
             "description": "Using React, Redux, Node.js, Express & MongoDB I have build a task management application called 'My-Day' clone of 'Monday'",
-            "image": "/images/table.png",
+            "image": "/images/myday/",
             "tags": [
                   "React",
                   "Redux",
@@ -16,24 +17,28 @@
       },
       {
             "title": "Airbnb",
-            "description": "End-to-end responsive project Using Angular, Rxjs, TypeScript, Node.js, Express and MongoDB. Named Airbnb for vacation rental around the world.",
-            "image": "/images/airbnb.png",
+            "name": "airbnb",
+            "description": "End to end responsive application built with Angular, Node.js, Express & MongoDB. The app is a clone of Airbnb, it includes a map, advanced search, user authentication, i18n and more.",
+            "image": "/images/airbnb/",
             "tags": [
                   "Angular",
-                  "Rxjs",
                   "TypeScript",
+                  "Rxjs",
+                  "i18n",
                   "Node.js",
                   "Express",
+                  "PWA",
                   "MongoDB"
             ],
             "source": "https://github.com/oferGavrilov/AirBNB-clone",
-            "visit": "https://airpnp.azurewebsites.net/#/640f1a201c1c4cc4add67107",
+            "visit": "https://airbnb-rktw.onrender.com/#/",
             "id": "2"
       },
       {
             "title": "Mister Bitcoin",
+            "name": "bitcoin",
             "description": "Using Angular, Rxjs, TypeScript, I have build bitcoin demo app called 'Mister Bitcoin', the app includes demo contacts to transform coins and statistics graphs.",
-            "image": "/images/bitcoin.png",
+            "image": "/images/bitcoin/",
             "tags": [
                   "Angular",
                   "RxJs",

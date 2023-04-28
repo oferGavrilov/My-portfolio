@@ -109,7 +109,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/components/Logo/LogoStyles.js", "src/components/Loader/LoaderStyles.js", "src/components/Projects/Projects.tsx"  ],
+, "src/components/Logo/LogoStyles.js", "src/components/Loader/LoaderStyles.js", "src/components/Projects/Projects.tsx", "src/styles/theme.js"  ],
   "exclude": [
     "node_modules"
   ]

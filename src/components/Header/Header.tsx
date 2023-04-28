@@ -3,49 +3,40 @@ import React from 'react'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { DiCssdeck } from 'react-icons/di'
 import { CgMail } from 'react-icons/cg'
-import dynamic from "next/dynamic";
+import dynamic from "next/dynamic"
 
-
-import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
+import { motion } from 'framer-motion'
 
 const Header = () => (
-  <Container>
-    <Div1>
-      <Link href={'/'} style={{ display: 'flex', alignItems: 'center', color: 'white', marginBottom: '20px' }}>
-        <DiCssdeck size={'3rem'} /> <Span>Portfolio</Span>
-      </Link>
-    </Div1>
-    <Div2>
-      <li>
+  <motion.header style={{ position: "sticky", top: 0, zIndex: 10 }}>
+    <section className='flex justify-between items-center h-28 px-8 bg-[#0F1624] shadow-xl shadow-slate-900' >
+      <div className='flex items-center gap-2'>
+        <DiCssdeck size={'3rem'} /> <span className='text-4xl'>Portfolio</span>
+      </div>
+      <div className='hidden md:flex gap-4 items-center'>
         <Link href="#projects">
-          <NavLink>Projects</NavLink>
+          <span className='navigate-link'>Projects</span>
         </Link>
-      </li>
-      <li>
         <Link href="#tech">
-          <NavLink>Technologies</NavLink>
+          <span className='navigate-link'>Technologies</span>
         </Link>
-      </li>
-      <li>
         <Link href="#about">
-          <NavLink>About</NavLink>
+          <span className='navigate-link'>About</span>
         </Link>
-      </li>
-    </Div2>
-    <Div3>
-      <SocialIcons href='https://github.com/oferGavrilov' target={'_blank'}>
-        <AiFillGithub size={'3rem'} />
-      </SocialIcons>
-      <SocialIcons href='https://www.linkedin.com/in/ofergavrilov/' target={'_blank'}>
-        <AiFillLinkedin size={'3rem'} />
-      </SocialIcons>
-      <SocialIcons href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ofergavri@gmail.com' target={'_blank'}>
-        <CgMail size={'3rem'} />
-      </SocialIcons>
-    </Div3>
-  </Container>
+      </div>
+      <div className='flex gap-4'>
+      <a className='social-icon' href='https://github.com/oferGavrilov' target={'_blank'}>
+          <AiFillGithub size={'3rem'} />
+        </a>
+        <a className='social-icon' href='https://www.linkedin.com/in/ofergavrilov/' target={'_blank'}>
+          <AiFillLinkedin size={'3rem'} />
+        </a>
+        <a className='social-icon' href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ofergavri@gmail.com' target={'_blank'}>
+          <CgMail size={'3rem'} />
+        </a>
+      </div>
+    </section>
+  </motion.header>
 )
 
-
 export default dynamic(() => Promise.resolve(Header), { ssr: false });
-
