@@ -7,9 +7,17 @@
             "tags": [
                   "React",
                   "Redux",
+                  "Scss",
+                  "MUI",
+                  "JWT",
+                  "PWA",
                   "Express",
                   "Node.js",
-                  "MongoDB"
+                  "Axios",
+                  "RestAPI",
+                  "Mongoose",
+                  "MongoDB",
+                  "Render"
             ],
             "source": "https://github.com/idandavid1/My-Day",
             "visit": "https://monday-8oy3.onrender.com/",
@@ -27,7 +35,12 @@
                   "i18n",
                   "Node.js",
                   "Express",
+                  "Axios",
+                  "RestAPI",
+                  "Mongoose",
                   "PWA",
+                  "JWT",
+                  "Mocka",
                   "MongoDB"
             ],
             "source": "https://github.com/oferGavrilov/AirBNB-clone",
@@ -35,17 +48,26 @@
             "id": "2"
       },
       {
-            "title": "Mister Bitcoin",
-            "name": "bitcoin",
-            "description": "Using Angular, Rxjs, TypeScript, I have build bitcoin demo app called 'Mister Bitcoin', the app includes demo contacts to transform coins and statistics graphs.",
-            "image": "/images/bitcoin/",
+            "title": "Netflix",
+            "name": "netflix",
+            "description": "A Serverless application built with React, Next.js, Tailwind CSS, and deployed on Vercel. The app is a clone of Netflix, it includes a movie trailer, user authentication, and more.",
+            "image": "/images/netflix/",
             "tags": [
-                  "Angular",
-                  "RxJs",
-                  "TypeScript"
+                  "NextJS",
+                  "React",
+                  "TypeScript",
+                  "Tailwind CSS",
+                  "Serverless",
+                  "Vercel",
+                  "Firebase",
+                  "TMDB API",
+                  "Axios",
+                  "React-player",
+                  "SSR",
+                  "SEO"
             ],
-            "source": "https://github.com/idandavid1/Mister-BITCoin",
-            "visit": "https://google.com",
+            "source": "https://github.com/oferGavrilov/Netfilx-clone",
+            "visit": "https://netfilx-clone-dd3vxoqm1-ofergavrilov.vercel.app/",
             "id": "1"
       }
 ]
