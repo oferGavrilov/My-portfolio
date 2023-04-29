@@ -1,6 +1,7 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/react-in-jsx-scope */
 import BgAnimation from '../components/BackgrooundAnimation/BackgroundAnimation'
-import Hero from '../components/Hero/Hero'
+import Hero from '../components/Hero'
 import Projects from '../components/Projects/Projects'
 import Technologies from '../components/Technologies/Technologies'
 import Timeline from '../components/TimeLine/TimeLine'
@@ -20,7 +21,7 @@ const Home = () => {
         </Section>
         <Projects />
         <Technologies />
-        <Timeline />
+        {/* <Timeline /> */}
       </Layout>}
       {isLoading && <Loader isLoading={isLoading} setIsLoading={setIsLoading} />}
     </>

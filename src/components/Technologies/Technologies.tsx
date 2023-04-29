@@ -1,10 +1,9 @@
-import React from 'react';
 import Image from 'next/image'
-import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { IconsContainer, List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
-import dynamic from "next/dynamic";
+import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents'
+import { IconsContainer, List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles'
+import dynamic from 'next/dynamic'
 
-const Technologies = () => (
+const Technologies = (): JSX.Element => (
   <Section id='tech'>
     <SectionDivider />
     <SectionTitle main>Technologies</SectionTitle>
@@ -99,6 +98,6 @@ const Technologies = () => (
       </ListItem>
     </List>
   </Section>
-);
+)
 
-export default dynamic(() => Promise.resolve(Technologies), { ssr: false });
+export default dynamic(async () => await Promise.resolve(Technologies), { ssr: false })

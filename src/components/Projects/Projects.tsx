@@ -1,23 +1,20 @@
-import React, { useState } from 'react';
 
-import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
-import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import projects from '../../data/projects.json';
-import { ProjectDescription } from './ProjectDescription';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Tag, TitleContent, UtilityList, Img } from './ProjectsStyles'
+import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents'
+import projects from '../../data/projects.json'
+import { ProjectDescription } from './ProjectDescription'
+import Link from 'next/link'
+import { motion } from 'framer-motion'
 
-const Projects = () => {
-  console.log(projects)
+const Projects = (): JSX.Element => {
   return (
-
     <Section nopadding id="projects">
       <SectionDivider />
       <SectionTitle main>Projects</SectionTitle>
       <GridContainer>
         {projects.map((project) => (
           <BlogCard key={project.id}>
-            <Link href={`/details/project?id=2`}>
+            <Link href={'/details/project?id=2'}>
               <Img src={project.image + project.name + '.png'} />
             </Link>
             <TitleContent>
@@ -47,7 +44,7 @@ const Projects = () => {
       </GridContainer>
     </Section>
 
-  );
+  )
 }
 
-export default Projects;
+export default Projects

@@ -6,12 +6,17 @@
     "dev": "next dev",
     "build": "next build && next export",
     "watch": "npx tailwindcss -i src/input.css -o dist/output.css --watch",
-    "start": "next start",
+    "start": "cross-env TAILWIND_MODE=watch craco start",
     "tsc": "tsc"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.8",
+    "@emotion/styled": "^11.10.8",
+    "@mui/material": "^5.12.2",
+    "@next/font": "^13.3.1",
     "@types/jest": "^29.5.1",
     "@types/react-dom": "^18.2.1",
+    "cross-env": "^7.0.3",
     "flowbite": "^1.6.5",
     "framer-motion": "^10.12.4",
     "next": "^13.3.1",

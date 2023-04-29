@@ -35,7 +35,7 @@ export const CarouselContainer = styled.ul`
 export const CarouselMobileScrollNode = styled.div`
   @media ${props => props.theme.breakpoints.sm} {
     display: flex;
-    min-width: ${({ final }) => final ? `120%;` : `min-content`}
+    min-width: ${({ final }) => final ? '120%;' : 'min-content'}
   }
 `
 
@@ -60,7 +60,7 @@ export const CarouselItem = styled.div`
     position: relative;
     height: fit-content;
     
-    ${(props) => props.active === props.index ? `opacity: 1` : `opacity: 0.5`}; 
+    ${(props) => props.active === props.index ? 'opacity: 1' : 'opacity: 0.5'}; 
   }
 `
 
@@ -137,8 +137,8 @@ export const CarouselButton = styled.button`
   border: none;
   cursor: pointer;
   margin-right: 4px;
-  opacity: ${(props) => props.active === props.index ? `1` : `.33`};
-  transform: ${(props) => props.active === props.index ? `scale(1.6)` : `scale(1)`};
+  opacity: ${(props) => props.active === props.index ? '1' : '.33'};
+  transform: ${(props) => props.active === props.index ? 'scale(1.6)' : 'scale(1)'};
 
   &:focus {
     outline: none;

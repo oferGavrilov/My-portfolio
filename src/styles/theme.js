@@ -1,10 +1,9 @@
-/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable no-unused-vars */
 import { ThemeProvider } from 'styled-components'
 
 import theme from '../themes/default'
 import GlobalStyles from './global'
 
-// eslint-disable-next-line react/prop-types
 const Theme = ({ children }) => (
   <ThemeProvider theme={theme}>
     <GlobalStyles />

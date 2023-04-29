@@ -1,8 +1,10 @@
-import React, { useState, useRef, useEffect } from 'react'
-
-import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles'
-import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents'
+/* eslint-disable no-unused-vars */
+import { useState, useRef, useEffect } from 'react'
 import { projects } from '../../constants/constants'
+import {
+  Section, SectionTitle, SectionText, CarouselContainer, CarouselMobileScrollNode, CarouselItem, CarouselItemTitle,
+  CarouselItemImg, CarouselItemText, CarouselButton, CarouselButtons, CarouselButtonDot
+} from '../../styles/GlobalComponents'
 
 const TOTAL_CAROUSEL_COUNT = projects.length
 

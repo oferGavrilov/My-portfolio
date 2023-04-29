@@ -1,7 +1,6 @@
-import React from "react";
-import { Svg } from "./LogoStyles";
+import { Svg } from './LogoStyles'
 
-function Logo() {
+function Logo (): JSX.Element {
   return (
     <Svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
       <title>Logo</title>
@@ -26,7 +25,7 @@ function Logo() {
         />
       </g>
     </Svg>
-  );
+  )
 }
 
-export default Logo;
+export default Logo

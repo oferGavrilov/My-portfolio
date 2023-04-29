@@ -1,8 +1,8 @@
 import '../styles/globals.css'
 import Theme from '../styles/theme'
-import { AppProps } from 'next/app'
+import { type AppProps } from 'next/app'
 import '../styles/Loader.css'
-export default function App({ Component, pageProps }: AppProps) {
+export default function App ({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <Theme>
       <Component {...pageProps} />
