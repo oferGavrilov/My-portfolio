@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "watch": "npx tailwindcss -i src/input.css -o dist/output.css --watch",
     "start": "cross-env TAILWIND_MODE=watch craco start",
     "tsc": "tsc"
