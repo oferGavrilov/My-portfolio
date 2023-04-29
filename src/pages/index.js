@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/react-in-jsx-scope */
-import BgAnimation from '../components/BackgrooundAnimation/BackgroundAnimation'
+import BgAnimation from '../components/BackgroundAnimation'
 import Hero from '../components/Hero'
 import Projects from '../components/Projects/Projects'
 import Technologies from '../components/Technologies/Technologies'
 import Layout from '../layout/Layout'
 import { Section } from '../styles/GlobalComponents'
-import Loader from '../components/Loader/Loader'
+import Loader from '../components/Loader'
 import { useState } from 'react'
 
 const Home = () => {

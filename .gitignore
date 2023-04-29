@@ -32,3 +32,7 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+src/data/projects.json
+src/data/projects copy.json
+src/data

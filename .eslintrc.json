@@ -3,20 +3,24 @@
         "browser": true,
         "es2021": true
     },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
     "extends": [
         "plugin:react/jsx-runtime",
         "standard-with-typescript",
         "plugin:@next/next/recommended",
         "plugin:react/recommended"
-
-],
-"overrides": [],
-"parserOptions": {
-    "ecmaVersion": "latest",
-    "project": "./tsconfig.json"
-},
-"plugins": [
-    "react"
-],
-"rules": {}
+    ],
+    "overrides": [],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "project": "./tsconfig.json"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {}
 }

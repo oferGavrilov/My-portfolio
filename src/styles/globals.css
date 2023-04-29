@@ -1,4 +1,5 @@
-  @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Inter&family=Outfit&family=Raleway:wght@600&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Inter&family=Outfit&family=Raleway:wght@600&family=Roboto+Slab&display=swap');
+@import "aos/dist/aos.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,7 +20,7 @@
       }
 
       .slide-bottom {
-            @apply sticky py-4 -top-10 z-50 flex w-24 justify-center  ;
+            @apply sticky py-4 top-10 z-50 flex w-24 justify-center  ;
             margin: auto;
             background: rgb(48, 44, 45, 0.8);
             border-radius: 10px;
@@ -87,41 +88,6 @@
             background-position: right center; /* change the direction of the change here */
             color: #fff;
             text-decoration: none;
-          }
-         
+      }
+       
 }
-
-
-@-webkit-keyframes slide-bottom {
-      0% {
-        -webkit-transform: translateY(0);
-                transform: translateY(0);
-                opacity: 0;
-      }
-      50% {
-            -webkit-transform: translateY(100px);
-            transform: translateY(100px);
-            opacity: 1;
-      }
-      100% {
-        -webkit-transform: translateY(20px);
-                transform: translateY(20px);
-      }
-}
-@keyframes slide-bottom {
-      0% {
-            opacity: 0;
-            -webkit-transform: translateY(0);
-            transform: translateY(0);
-      }
-      50% {
-            opacity: 1;
-            -webkit-transform: translateY(100px);
-            transform: translateY(100px);
-      }
-      100% {
-        -webkit-transform: translateY(20px);
-                transform: translateY(20px);
-      }
-    }
-    

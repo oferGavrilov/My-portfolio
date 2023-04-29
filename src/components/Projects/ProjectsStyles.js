@@ -5,6 +5,11 @@ export const Img = styled.img`
   height:100%;
   object-fit: cover;
   overflow: hidden;
+  opacity: 0.9;
+  transition: 0.4s ease-in-out;
+  &:hover{
+    opacity: 1;
+  }
 `
 export const GridContainer = styled.section`
 display: grid;
@@ -25,7 +30,6 @@ export const BlogCard = styled.div`
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
-  width: 400px;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
@@ -66,7 +70,6 @@ export const Intro = styled.div`
 
 export const CardInfo = styled.div`
   width: 100%;
-  padding: 0 50px;
   color: #e4e6e7;
   font-style: 2rem;
   line-height: 24px;
@@ -90,6 +93,7 @@ export const ShowMoreBtn = styled.button`
 export const UtilityList = styled.ul`
   list-style-type: none;
   padding: 0;
+  height: 50px;
   display: flex;
   justify-content: space-evenly;
   margin: 2.5rem 0;

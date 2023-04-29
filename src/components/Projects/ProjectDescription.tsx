@@ -18,8 +18,8 @@ export function ProjectDescription ({ txt, length }: Props): JSX.Element {
   }
 
   return (
-        <article>
-            <p>{getTxtToShow(txt, length)}</p>
+        <article className='px-12'>
+            <p className={`${isShowMore ? 'h-auto' : 'h-[72px]'}`}>{getTxtToShow(txt, length)}</p>
             {txt.length > length && <ShowMoreBtn onClick={onToggleLongTxt}>{isShowMore ? 'Read less' : 'Read more'}</ShowMoreBtn>}
         </article>
   )

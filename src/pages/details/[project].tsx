@@ -7,11 +7,13 @@ import { HeroImg, HeroContainer, HeroContext, HeroSection, HeroTitle, HeroDescri
 import Link from 'next/link'
 import { AiFillHome } from 'react-icons/ai'
 function ProjectDetails (): JSX.Element {
-  const [project, setProject] = useState<Project | null>(null)
+  const [project, setProject] = useState<Project | null | undefined>(null)
   const { id } = useRouter().query
+
   useEffect(() => {
     const data = projects.find(project => project.id === id)
-    if (data == null) return
+    // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
+    if (!data) return
     setProject(data)
   }, [id])
 

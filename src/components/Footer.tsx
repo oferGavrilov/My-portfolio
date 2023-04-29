@@ -6,7 +6,7 @@ const Footer = (): ReactJSXElement => {
   return (
     <footer className='footer '>
       <ul className='flex pt-20 border-t border-[#ffffff20]'>
-        <li className='flex-1  '>
+        <li className='flex-1'>
           <h4 className='footer-title'>Call</h4>
           <a className='footer-link' href="tel:054-984-3454">054-984-3454</a>
         </li>

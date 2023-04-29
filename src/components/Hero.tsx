@@ -1,8 +1,8 @@
 import React from 'react'
 
 const Hero = (): JSX.Element => (
-  <section className='flex ml-4 md:ml-0 w-[90vw] md:w-auto mx-auto overflow-hidden'>
-    <div className='w-[100%] flex flex-col mx-auto md:w-full '>
+  <section className='flex  w-[90vw] md:w-auto mx-auto overflow-hidden'>
+    <div className='w-[100%] flex flex-col mx-auto md:w-full gap-4'>
       <h2 className='main-title'>
         Welcome To <br />
         My Personal Portfolio

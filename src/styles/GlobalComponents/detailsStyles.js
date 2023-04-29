@@ -59,7 +59,7 @@ export const HeroContainer = styled.div`
 
 export const MockupSection = styled.div`
       background-color: #141414;
-      padding: 10rem 2rem;
+      padding: 2rem 4rem;
       overflow-x: hidden;
 `
 export const MockupContainer = styled.div`
@@ -67,7 +67,7 @@ export const MockupContainer = styled.div`
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 2rem;
+      gap: 6rem;
 
       @media screen and (min-width: 900px) {
             flex-direction: row;

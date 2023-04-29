@@ -1,21 +1,25 @@
 
-import React from 'react'
-import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Tag, TitleContent, UtilityList, Img } from './ProjectsStyles'
-import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents'
+import React, { useEffect } from 'react'
+import AOS from 'aos'
+import { BlogCard, CardInfo, GridContainer, HeaderThree, Tag, TitleContent, UtilityList, Img } from './ProjectsStyles'
+import { Section, SectionTitle } from '../../styles/GlobalComponents'
 import projects from '../../data/projects.json'
 import { ProjectDescription } from './ProjectDescription'
 import Link from 'next/link'
-import { motion } from 'framer-motion'
 
 const Projects = (): JSX.Element => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 })
+    AOS.refresh()
+  }, [])
+
   return (
     <Section id="projects">
-      <SectionDivider />
       <SectionTitle >Projects</SectionTitle>
       <GridContainer>
         {projects.map((project) => (
-          <BlogCard key={project.id}>
-            <Link href={'/details/project?id=2'}>
+          <BlogCard key={project.id} data-aos="fade-up">
+            <Link href={`/details/project?id=${project.id}`}>
               <Img src={project.image + project.name + '.png'} />
             </Link>
             <TitleContent>
@@ -33,12 +37,8 @@ const Projects = (): JSX.Element => {
               </ul>
             </div>
             <UtilityList>
-              <motion.button whileHover={{ scale: 1.09, transition: { duration: 1 } }} whileTap={{ scale: 0.9 }}>
-                <ExternalLinks href={project.visit} target="_blank">App</ExternalLinks>
-              </motion.button>
-              <motion.button whileHover={{ scale: 1.09, transition: { duration: 1 } }} whileTap={{ scale: 0.9 }}>
-                <ExternalLinks href={project.source} target="_blank">Source</ExternalLinks>
-              </motion.button>
+                <a className='project-btn' href={project.visit} target="_blank" rel="noreferrer"><span>App</span></a>
+                <a className='project-btn' href={project.source} target="_blank" rel="noreferrer"><span>Source</span></a>
             </UtilityList>
           </BlogCard>
         ))}
