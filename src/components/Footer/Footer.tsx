@@ -1,9 +1,9 @@
-import React from 'react';
-import { AiFillGithub , AiFillLinkedin } from 'react-icons/ai';
+import React from 'react'
+import { AiFillGithub , AiFillLinkedin } from 'react-icons/ai'
 import { CgMail } from 'react-icons/cg'
 
-import { SocialIcons } from '../Header/HeaderStyles';
-import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
+import { SocialIcons } from '../Header/HeaderStyles'
+import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles'
 
 const Footer = () => {
   return (
@@ -35,7 +35,7 @@ const Footer = () => {
         </SocialContainer>
       </SocialIconsContainer>
     </FooterWrapper>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
