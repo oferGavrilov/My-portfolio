@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 function Loader ({ isLoading, setIsLoading }: { isLoading: boolean, setIsLoading: () => void }): JSX.Element {
   useEffect(() => {

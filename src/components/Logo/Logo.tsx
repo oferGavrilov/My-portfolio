@@ -1,3 +1,5 @@
+import React from 'react'
+
 import { Svg } from './LogoStyles'
 
 function Logo (): JSX.Element {

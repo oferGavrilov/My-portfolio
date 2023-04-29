@@ -1,4 +1,5 @@
 
+import React from 'react'
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Tag, TitleContent, UtilityList, Img } from './ProjectsStyles'
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents'
 import projects from '../../data/projects.json'
@@ -8,9 +9,9 @@ import { motion } from 'framer-motion'
 
 const Projects = (): JSX.Element => {
   return (
-    <Section nopadding id="projects">
+    <Section id="projects">
       <SectionDivider />
-      <SectionTitle main>Projects</SectionTitle>
+      <SectionTitle >Projects</SectionTitle>
       <GridContainer>
         {projects.map((project) => (
           <BlogCard key={project.id}>

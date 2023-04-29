@@ -5,17 +5,18 @@
     },
     "extends": [
         "plugin:react/jsx-runtime",
-        "standard-with-typescript"
-    ],
-    "overrides": [
-    ],
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "project": "./tsconfig.json"
-    },
-    "plugins": [
-        "react"
-    ],
-    "rules": {
-    }
+        "standard-with-typescript",
+        "plugin:@next/next/recommended",
+        "plugin:react/recommended"
+
+],
+"overrides": [],
+"parserOptions": {
+    "ecmaVersion": "latest",
+    "project": "./tsconfig.json"
+},
+"plugins": [
+    "react"
+],
+"rules": {}
 }

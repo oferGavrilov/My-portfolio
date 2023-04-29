@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/restrict-plus-operands */
 import { useRouter } from 'next/router'
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import projects from '../../data/projects.json'
 import { type Project } from '../../model/project.model'
 import { HeroImg, HeroContainer, HeroContext, HeroSection, HeroTitle, HeroDescription, MockupContainer, MockupImg, MockupSection } from '../details/detailsStyles'

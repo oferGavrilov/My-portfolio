@@ -1,4 +1,4 @@
-
+import React from 'react'
 import { type ReactJSXElement } from '@emotion/react/types/jsx-namespace'
 import SocialLinks from './SocialLinks'
 
@@ -12,7 +12,7 @@ const Footer = (): ReactJSXElement => {
         </li>
         <li className='flex-1'>
           <h4 className='footer-title'>Email</h4>
-          <a className='footer-link' href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ofergavri@gmail.com' target={'_blank'}>ofergavri@gmail.com</a>
+          <a className='footer-link' href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ofergavri@gmail.com' target={'_blank'} rel="noreferrer">ofergavri@gmail.com</a>
         </li>
       </ul>
       <div className='flex mt-14 items-center justify-between'>

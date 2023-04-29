@@ -1,3 +1,5 @@
+import React from 'react'
+
 import { IconButton } from '@mui/material'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { CgMail } from 'react-icons/cg'

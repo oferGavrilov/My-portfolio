@@ -1,3 +1,4 @@
+import React from 'react'
 
 const Hero = (): JSX.Element => (
   <section className='flex ml-4 md:ml-0 w-[90vw] md:w-auto mx-auto overflow-hidden'>
@@ -7,7 +8,7 @@ const Hero = (): JSX.Element => (
         My Personal Portfolio
       </h2>
       <p className='text-2xl pb-6 md:text-3xl md:max-w-4xl text-[#ffffff80] font-light lg:text-4xl lg:max-w-3xl'>
-        My name is Ofer Gavriel and i'm a Full-Stack developer and my purpose is to elevate Websites to the Next Level !
+        My name is Ofer Gavriel and i&apos;m a Full-Stack developer and my purpose is to elevate Websites to the Next Level !
       </p>
       <button className='btn-grad' onClick={() => window.open('https://github.com/oferGavrilov', '_blank')}>Learn More</button>
     </div>
