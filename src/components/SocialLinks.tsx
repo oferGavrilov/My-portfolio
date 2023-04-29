@@ -6,7 +6,7 @@ import { CgMail } from 'react-icons/cg'
 
 function SocialLinks (): JSX.Element {
   return (
-      <div>
+      <div className='flex'>
       <IconButton color='inherit' href='https://github.com/oferGavrilov'>
         <AiFillGithub className='social-link' size={'3.5rem'} />
       </IconButton>

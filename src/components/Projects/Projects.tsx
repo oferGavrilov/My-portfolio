@@ -15,7 +15,7 @@ const Projects = (): JSX.Element => {
 
   return (
     <Section id="projects">
-      <SectionTitle >Projects</SectionTitle>
+      <SectionTitle data-aos="fade-left">Projects</SectionTitle>
       <GridContainer>
         {projects.map((project) => (
           <BlogCard key={project.id} data-aos="fade-up">

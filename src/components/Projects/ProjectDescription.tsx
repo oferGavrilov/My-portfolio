@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { ShowMoreBtn } from './ProjectsStyles'
+import { motion } from 'framer-motion'
 
 interface Props {
   txt: string
@@ -18,9 +19,15 @@ export function ProjectDescription ({ txt, length }: Props): JSX.Element {
   }
 
   return (
-        <article className='px-12'>
-            <p className={`${isShowMore ? 'h-auto' : 'h-[72px]'}`}>{getTxtToShow(txt, length)}</p>
-            {txt.length > length && <ShowMoreBtn onClick={onToggleLongTxt}>{isShowMore ? 'Read less' : 'Read more'}</ShowMoreBtn>}
-        </article>
+    <article className='px-12'>
+      <p className={`${isShowMore ? 'h-auto' : 'h-[72px]'}`}>{getTxtToShow(txt, length)}</p>
+      {txt.length > length &&
+        <motion.div whileTap={{ scale: 0.95 }}>
+          <ShowMoreBtn onClick={onToggleLongTxt}>
+            {isShowMore ? 'Read less' : 'Read more'}
+          </ShowMoreBtn>
+        </motion.div>
+      }
+    </article>
   )
 }
