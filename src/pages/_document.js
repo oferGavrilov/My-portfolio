@@ -33,7 +33,17 @@ export default class MyDocument extends Document {
     return (
       <Html lang='en-GB'>
         <Head>
-          <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-CB1BSL3NER"></script>
+          <script dangerouslySetInnerHTML={{
+            __html: `
+          window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-CB1BSL3NER');
+          page_path: window.location.pathname,
+        `
+          }} />
         </Head>
         <body>
           <Main />
