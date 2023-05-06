@@ -25,9 +25,9 @@ const Header = (): JSX.Element => (
           </Link>
         </motion.div>
         <motion.div whileTap={{ scale: 0.9 }}>
-          <Link href="#about">
+          {/* <Link href="/about">
             <span className='navigate-link'>About</span>
-          </Link>
+          </Link> */}
         </motion.div>
       </div>
       <SocialLinks />
