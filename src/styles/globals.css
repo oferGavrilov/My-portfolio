@@ -34,8 +34,7 @@
 
       /* Footer */
       .footer {
-            @apply max-w-[1040px] pt-6 pb-24  mx-auto 
-            w-[90%];
+            @apply  pt-6 pb-24   ;
       }
       .footer-title {
             @apply font-inter font-bold text-[#ffffff66] text-base tracking-wide leading-8 uppercase mb-4;
