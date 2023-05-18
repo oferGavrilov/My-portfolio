@@ -95,6 +95,7 @@ export const UtilityList = styled.ul`
   padding: 0;
   height: 50px;
   display: flex;
+  gap: 1rem;
   justify-content: space-evenly;
   margin: 2.5rem 0;
 `

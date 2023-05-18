@@ -3,7 +3,7 @@
       font-size: 17px;
       text-decoration: none;
       height: 40px;
-      width: 150px;
+      width: 120px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -15,6 +15,10 @@
       font-weight: 500;
       color: #f1faee;
       background-color: #457b9d;
+
+      @media (min-width: 768px) {
+            width: 150px;
+      }
 }
 
 .project-btn:hover {
