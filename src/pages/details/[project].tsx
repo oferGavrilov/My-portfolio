@@ -6,25 +6,24 @@ import { type Project } from '../../model/project.model'
 import { HeroImg, HeroContainer, HeroContext, HeroSection, HeroTitle, HeroDescription, MockupContainer, MockupImg, MockupSection } from '../../styles/GlobalComponents/detailsStyles'
 import Link from 'next/link'
 import { AiFillHome } from 'react-icons/ai'
-function ProjectDetails (): JSX.Element {
-  const [project, setProject] = useState<Project | null | undefined>(null)
-  const { id } = useRouter().query
+function ProjectDetails(): JSX.Element {
+      const [project, setProject] = useState<Project | null | undefined>(null)
+      const { id } = useRouter().query
 
-  useEffect(() => {
-    const data = projects.find(project => project.id === id)
-    // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
-    if (!data) return
-    setProject(data)
-  }, [id])
+      useEffect(() => {
+            const data = projects.find(project => project.id === id)
+            // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
+            if (!data) return
+            setProject(data)
+      }, [id])
 
-  return (
+      return (
             <>
                   <Link href="/" className='text-4xl slide-bottom'>
                         <AiFillHome />
                   </Link>
                   <HeroSection>
                         <HeroContainer className="hero-container">
-
                               <HeroImg className="hero-img-large" src={project?.image + 'large.png'} />
                               <HeroImg className="hero-img-desktop" src={project?.image + 'desktop.png'} />
                               <HeroImg className="hero-img-tablet" src={project?.image + 'tablet.jpg'} />
@@ -42,7 +41,7 @@ function ProjectDetails (): JSX.Element {
                         </MockupContainer>
                   </MockupSection>
             </>
-  )
+      )
 }
 
 export default ProjectDetails

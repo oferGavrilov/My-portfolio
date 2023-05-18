@@ -6,6 +6,7 @@ import { Section, SectionTitle } from '../../styles/GlobalComponents'
 import projects from '../../data/projects.json'
 import { ProjectDescription } from './ProjectDescription'
 import Link from 'next/link'
+import Button from '../custom/Button'
 
 const Projects = (): JSX.Element => {
   useEffect(() => {
@@ -25,9 +26,13 @@ const Projects = (): JSX.Element => {
             <TitleContent>
               <HeaderThree>{project.title}</HeaderThree>
             </TitleContent>
-            <CardInfo>
-              <ProjectDescription txt={project.description} length={100}></ProjectDescription>
-            </CardInfo>
+            <p className='text-start px-12 tracking-wider'>
+              {project.description}
+              {/* <ProjectDescription txt={project.description} length={100}></ProjectDescription> */}
+            </p>
+            <Link href={`/details/project?id=${project.id}`}>
+              <Button text="View More" className='project-btn !w-[90%] !mx-auto !my-8 btn-grad' />
+            </Link>
             <div>
               <TitleContent>Stack</TitleContent>
               <ul className='flex flex-wrap gap-x-8 h-32 overflow-hidden px-8 '>
@@ -37,8 +42,8 @@ const Projects = (): JSX.Element => {
               </ul>
             </div>
             <UtilityList>
-                <a className='project-btn' href={project.visit} target="_blank" rel="noreferrer"><span>App</span></a>
-                <a className='project-btn' href={project.source} target="_blank" rel="noreferrer"><span>Source</span></a>
+              <a className='project-btn' href={project.visit} target="_blank" rel="noreferrer"><span>App</span></a>
+              <a className='project-btn' href={project.source} target="_blank" rel="noreferrer"><span>Source</span></a>
             </UtilityList>
           </BlogCard>
         ))}
