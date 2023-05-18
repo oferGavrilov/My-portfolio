@@ -1,10 +1,9 @@
 
 import React, { useEffect } from 'react'
 import AOS from 'aos'
-import { BlogCard, CardInfo, GridContainer, HeaderThree, Tag, TitleContent, UtilityList, Img } from './ProjectsStyles'
+import { BlogCard, GridContainer, HeaderThree, Tag, TitleContent, UtilityList, Img } from './ProjectsStyles'
 import { Section, SectionTitle } from '../../styles/GlobalComponents'
 import projects from '../../data/projects.json'
-import { ProjectDescription } from './ProjectDescription'
 import Link from 'next/link'
 import Button from '../custom/Button'
 
@@ -28,7 +27,6 @@ const Projects = (): JSX.Element => {
             </TitleContent>
             <p className='text-start px-12 tracking-wider'>
               {project.description}
-              {/* <ProjectDescription txt={project.description} length={100}></ProjectDescription> */}
             </p>
             <Link href={`/details/project?id=${project.id}`}>
               <Button text="View More" className='project-btn !w-[90%] !mx-auto !my-8 btn-grad' />
