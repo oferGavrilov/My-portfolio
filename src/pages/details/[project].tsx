@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/restrict-plus-operands */
+/* eslint-disable @typescript-eslint/indent */
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 import projects from '../../data/projects.json'
@@ -6,7 +7,7 @@ import { type Project } from '../../model/project.model'
 import { HeroImg, HeroContainer, HeroContext, HeroSection, HeroTitle, HeroDescription, MockupContainer, MockupImg, MockupSection } from '../../styles/GlobalComponents/detailsStyles'
 import Link from 'next/link'
 import { AiFillHome } from 'react-icons/ai'
-function ProjectDetails(): JSX.Element {
+function ProjectDetails (): JSX.Element {
       const [project, setProject] = useState<Project | null | undefined>(null)
       const { id } = useRouter().query
 

@@ -22,5 +22,9 @@
     "plugins": [
         "react"
     ],
-    "rules": {}
+    "rules": {
+        "indent": "off",
+        "react/tsx-indent": "off",
+        "react/tsx-indent-props": "off"
+    }
 }
