@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/react-in-jsx-scope */
 import BgAnimation from '../components/BackgroundAnimation'
 import Hero from '../components/Hero'
 import Projects from '../components/Projects/Projects'

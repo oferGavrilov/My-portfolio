@@ -8,7 +8,8 @@
     "watch": "npx tailwindcss -i src/input.css -o dist/output.css --watch",
     "start": "cross-env TAILWIND_MODE=watch craco start",
     "tsc": "tsc",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:watch": "npm run lint -- --watch"
   },
   "dependencies": {
     "@emotion/react": "^11.10.8",
@@ -26,6 +27,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.2.0",
     "react-responsive-carousel": "^3.2.23",
+    "react-spring": "^9.7.1",
     "styled-components": "^5.3.10",
     "styled-normalize": "^8.0.7"
   },

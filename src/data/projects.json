@@ -2,7 +2,7 @@
       {
             "title": "My-Day",
             "name": "myday",
-            "description": "Using React, Redux, Node.js, Express & MongoDB I have build a task management application called 'My-Day' clone of 'Monday'",
+            "description": "Task managment application inspired by Monday.com, this project produced for manage projects and tasks in each way you choose The app is built with React, Redux, Node.js, Express & MongoDB. It includes user authentication, drag & drop, end to end testing, high security and more.",
             "image": "/images/myday/",
             "tags": [
                   "React",
@@ -26,7 +26,7 @@
       {
             "title": "Airbnb",
             "name": "airbnb",
-            "description": "End to end responsive application built with Angular, Node.js, Express & MongoDB. The app is a clone of Airbnb, it includes a map, advanced search, user authentication, i18n and more.",
+            "description": "Vacation rental application to find and rent places around the world, in this app you can become a host and post your place to everybody or pick a place for your next vacation. built with Angular, Node.js, Express & MongoDB. The app is a clone of Airbnb, it includes a map, advanced search, user authentication, i18n and more.",
             "image": "/images/airbnb/",
             "tags": [
                   "Angular",
@@ -50,14 +50,13 @@
       {
             "title": "Netflix",
             "name": "netflix",
-            "description": "A Serverless application built with React, Next.js, Tailwind CSS, and deployed on Vercel. The app is a clone of Netflix, it includes a movie trailer, user authentication, and more.",
+            "description": "Netflix clone application built with React, Next.js, Tailwind CSS, and deployed on Vercel. The app is a clone of Netflix, it includes a movie trailer, user authentication, and more.",
             "image": "/images/netflix/",
             "tags": [
                   "NextJS",
                   "React",
                   "TypeScript",
                   "Tailwind CSS",
-                  "Serverless",
                   "Vercel",
                   "Firebase",
                   "TMDB API",

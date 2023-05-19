@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Hero = (): JSX.Element => (
-  <section className='flex  w-[90vw] md:w-auto mx-auto overflow-hidden'>
+  <section className='flex  w-[90vw] md:w-auto mx-auto my-10 overflow-hidden'>
     <div className='w-[100%] flex flex-col mx-auto md:w-full gap-4'>
       <h2 className='main-title'>
         Welcome To <br />
