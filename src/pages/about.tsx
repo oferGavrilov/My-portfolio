@@ -2,7 +2,7 @@ import React from 'react'
 
 function About (): JSX.Element {
   return (
-            <div> About</div >
+    <div> About</div >
   )
 }
 

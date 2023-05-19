@@ -25,7 +25,7 @@ const Projects = (): JSX.Element => {
             <TitleContent>
               <HeaderThree>{project.title}</HeaderThree>
             </TitleContent>
-            <p className='text-start leading-snug px-12 tracking-wider h-[170px] md:h-[100px]'>
+            <p className='text-start leading-snug px-12 tracking-wider md:h-[170px]'>
               {project.description}
             </p>
             <Link href={`/details/project?id=${project.id}`}>

@@ -4,23 +4,28 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+@layer base {
+      body {
+            @apply overflow-x-hidden;
+      }
+}
 
+@layer components {
       /* Header */
       .navigate-link {
             @apply text-3xl leading-8 text-blue-300 transition-colors duration-500 hover:text-white;
       }
-      .main-title{
-            @apply text-[25px] md:text-[34px] lg:text-[48px] tracking-wide mb-2 py-4 max-w-full font-extrabold 
-             text-gradient;
+
+      .main-title {
+            @apply text-[25px] md:text-[34px] lg:text-[48px] tracking-wide mb-2 py-4 max-w-full font-extrabold text-gradient;
       }
 
       .social-icon {
-            @apply transition duration-300 text-white rounded-full p-2 hover:bg-[#212d45] hover:scale-125;
+            @apply transition duration-300 text-white rounded-full p-2 hover: bg-[#212d45] hover:scale-125;
       }
 
       .slide-bottom {
-            @apply sticky py-4 top-10 z-50 flex w-24 justify-center  ;
+            @apply sticky py-4 top-10 z-50 flex w-24 justify-center;
             margin: auto;
             background: rgb(48, 44, 45, 0.8);
             border-radius: 10px;
@@ -28,70 +33,108 @@
             -webkit-animation: slide-bottom 0.8s cubic-bezier(0.680, -0.550, 0.265, 1.550) 1s both;
             animation: slide-bottom 0.8s cubic-bezier(0.680, -0.550, 0.265, 1.550) 1s both;
       }
+
       .slide-bottom:hover {
             @apply bg-[#242424];
       }
 
       /* Footer */
       .footer {
-            @apply  pt-6 pb-24   ;
+            @apply pt-6 pb-24;
       }
+
       .footer-title {
             @apply font-inter font-bold text-[#ffffff66] text-base tracking-wide leading-8 uppercase mb-4;
       }
+
       .footer-link {
-            @apply text-xl md:text-2xl leading-8 text-[#ffffffbf] mb-4 
-             relative left-0 hover:left-2 hover:text-white;
+            @apply text-xl md:text-2xl leading-8 text-[#ffffffbf] mb-4 relative left-0 hover:left-2 hover:text-white;
             transition: .3s ease;
       }
+
       .social-link {
-            @apply transition ease-in-out   hover:-translate-y-1 hover:scale-110  duration-500  ;
+            @apply transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-500;
+      }
+
+      /* Projects */
+      .list-container {
+            @apply flex flex-col pl-1;
+      }
+
+      .icon-container {
+            @apply flex gap-x-4 pb-2;
+      }
+
+      .list-item {
+            @apply max-w-[320px] mb-3 md:mb-0 flex flex-col md:max-w-[203px];
+      }
+
+      .list-title {
+            @apply font-bold text-3xl md:text-4xl lg:text-5xl tracking-wide text-white my-2
+      }
+
+      .list-paragraph {
+            @apply flex flex-col text-2xl md:text-3xl text-[#ffffffbf] tracking-wide leading-10 gap-2;
       }
 
 }
 
 @layer utilities {
+      .section-title {
+            @apply text-6xl font-extrabold w-max max-w-full;
+            background: linear-gradient(121.57deg,
+                        #ffffff 18.77%,
+                        rgba(255, 255, 255, 0.66) 60.15%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 16px;
+      }
+
       .text-gradient {
-            background: linear-gradient(121.57deg,#FFFFFF 18.77%,rgba(255,255,255,0.66) 60.15%);
+            background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
       }
+
       .logo {
-            background: linear-gradient(121.57deg,#a8dadc 31.77%,#457b9d 90.15%);
+            background: linear-gradient(121.57deg, #a8dadc 31.77%, #457b9d 90.15%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
       }
-               
+
       .btn-grad {
-            background-image: linear-gradient(to right, #314755 0%, #26a0da  41%, #314755  100%);
+            background-image: linear-gradient(to right, #314755 0%, #26a0da 41%, #314755 100%);
             padding: 8px 24px;
             text-align: center;
             transition: 0.5s;
             background-size: 200% auto;
             color: white;
             font-weight: bold;
-            letter-spacing: 1px;            
+            letter-spacing: 1px;
             border-radius: 2em;
             display: block;
       }
+
       @media screen and (min-width: 640px) {
-            .btn-grad{
+            .btn-grad {
                   padding: 14px 24px;
                   max-width: 184px;
             }
       }
+
       @media screen and (min-width: 770px) {
-            .btn-grad{
+            .btn-grad {
                   padding: 18px 24px;
                   font-size: 22px;
                   max-width: 262px;
             }
       }
 
-          .btn-grad:hover {
-            background-position: right center; /* change the direction of the change here */
+      .btn-grad:hover {
+            background-position: right center;
+            /* change the direction of the change here */
             color: #fff;
             text-decoration: none;
       }
-       
+
 }

@@ -1,7 +1,7 @@
 import BgAnimation from '../components/BackgroundAnimation'
 import Hero from '../components/Hero'
 import Projects from '../components/Projects/Projects'
-import Technologies from '../components/Technologies/Technologies'
+import Technologies from '../components/Technologies'
 import Layout from '../layout/Layout'
 import { Section } from '../styles/GlobalComponents'
 import Loader from '../components/Loader'

@@ -23,7 +23,7 @@
         "react"
     ],
     "rules": {
-        "indent": "off",
+        "indent": ["error", 2],
         "react/tsx-indent": "off",
         "react/tsx-indent-props": "off",
         "react/react-in-jsx-scope": "off",

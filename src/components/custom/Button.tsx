@@ -9,10 +9,10 @@ interface Props {
 }
 
 export default function Button ({ text, className }: Props): JSX.Element {
-    return (
-        <motion.div whileTap={{ scale: 0.95 }}>
-            <button className={className} >{text}</button>
-        </motion.div>
+  return (
+    <motion.div whileTap={{ scale: 0.95 }}>
+      <button className={className} >{text}</button>
+    </motion.div>
 
-    )
+  )
 }
