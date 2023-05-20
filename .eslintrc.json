@@ -23,9 +23,8 @@
         "react"
     ],
     "rules": {
-        "indent": ["error", 2],
-        "react/tsx-indent": "off",
-        "react/tsx-indent-props": "off",
+        "indent": "off",
+        "no-unused-vars": "off",
         "react/react-in-jsx-scope": "off",
         "space-before-function-paren": ["error", {
             "anonymous": "always",

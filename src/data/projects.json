@@ -4,6 +4,8 @@
             "name": "myday",
             "description": "Task managment application inspired by Monday.com, this project produced for manage projects and tasks in each way you choose The app is built with React, Redux, Node.js, Express & MongoDB. It includes user authentication, drag & drop, end to end testing, high security and more.",
             "image": "/images/myday/",
+            "color": "#2db5ff",
+            "architecture":"This application build with react for front-end side using Redux for state management, Scss & MUI for styling, Axios for HTTP requests, Node.js & Express framework for backend side using routing, request handling and middleware management, MongoDB for database and Mongoose for modeling data. ",
             "tags": [
                   "React",
                   "Redux",
@@ -28,6 +30,8 @@
             "name": "airbnb",
             "description": "Vacation rental application to find and rent places around the world, in this app you can become a host and post your place to everybody or pick a place for your next vacation. built with Angular, Node.js, Express & MongoDB. The app is a clone of Airbnb, it includes a map, advanced search, user authentication, i18n and more.",
             "image": "/images/airbnb/",
+            "color": "#F05252",
+            "architecture":"This application built with Angular for front-end side using MVC architecture, Rxjs for asynchronous programming to handle events, SCSS for styling, RestAPI for HTTP methods, Node.js & Express framework for backend side using routing, request handling and middleware management, MongoDB for database and Mongoose for modeling data.",
             "tags": [
                   "Angular",
                   "TypeScript",
@@ -52,6 +56,8 @@
             "name": "netflix",
             "description": "Netflix clone application built with React, Next.js, Tailwind CSS, and deployed on Vercel. The app is a clone of Netflix, it includes a movie trailer, user authentication, and more.",
             "image": "/images/netflix/",
+            "color": "#B00710",
+            "architecture":"This application built with Next.js for using SSR, React for frontend side, TypeScript as programming language React-Context for state management, Tailwind CSS for styling, RestAPI for HTTP requests and methods manipulation, Firebase for user authentication, TMDB API for movies data, React-player for movie trailers.",
             "tags": [
                   "NextJS",
                   "React",

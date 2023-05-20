@@ -25,18 +25,17 @@
       }
 
       .slide-bottom {
-            @apply sticky py-4 top-10 z-50 flex w-24 justify-center;
-            margin: auto;
-            background: rgb(48, 44, 45, 0.8);
-            border-radius: 10px;
-            transition: all .3s ease-out;
+            @apply sticky py-4 top-4 z-50 flex w-max justify-center flex-col items-center gap-y-4 mx-auto transition-all duration-300 ease-in-out;
             -webkit-animation: slide-bottom 0.8s cubic-bezier(0.680, -0.550, 0.265, 1.550) 1s both;
             animation: slide-bottom 0.8s cubic-bezier(0.680, -0.550, 0.265, 1.550) 1s both;
       }
+      .slide-bottom-child{
+            @apply bg-[#302c2dcc] p-4  transition duration-300 text-white rounded-xl shadow-gray-700 shadow-md  hover:bg-[#3b3939]  ;
+       }
 
-      .slide-bottom:hover {
-            @apply bg-[#242424];
-      }
+       .slide-left{
+            @apply sticky top-[288px] flex flex-col w-max gap-6 text-center;
+       }
 
       /* Footer */
       .footer {
@@ -101,40 +100,10 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
       }
-
-      .btn-grad {
-            background-image: linear-gradient(to right, #314755 0%, #26a0da 41%, #314755 100%);
-            padding: 8px 24px;
-            text-align: center;
-            transition: 0.5s;
-            background-size: 200% auto;
-            color: white;
-            font-weight: bold;
-            letter-spacing: 1px;
-            border-radius: 2em;
-            display: block;
+      .custom-shadow {
+            filter: drop-shadow(3px 2px 9px black);
       }
-
-      @media screen and (min-width: 640px) {
-            .btn-grad {
-                  padding: 14px 24px;
-                  max-width: 184px;
-            }
+      .custom-paragraph {
+            @apply text-3xl leading-10 font-bold [word-spacing:10px] max-w-lg custom-shadow md:max-w-5xl;
       }
-
-      @media screen and (min-width: 770px) {
-            .btn-grad {
-                  padding: 18px 24px;
-                  font-size: 22px;
-                  max-width: 262px;
-            }
-      }
-
-      .btn-grad:hover {
-            background-position: right center;
-            /* change the direction of the change here */
-            color: #fff;
-            text-decoration: none;
-      }
-
 }
