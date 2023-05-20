@@ -1,0 +1,51 @@
+[
+      {
+            "title": "My-Day",
+            "name": "myday",
+            "description": "Using React, Redux, Node.js, Express & MongoDB I have build a task management application called 'My-Day' clone of 'Monday'",
+            "image": "/images/myday/",
+            "tags": [
+                  "React",
+                  "Redux",
+                  "Express",
+                  "Node.js",
+                  "MongoDB"
+            ],
+            "source": "https://github.com/idandavid1/My-Day",
+            "visit": "https://monday-8oy3.onrender.com/",
+            "id": "0"
+      },
+      {
+            "title": "Airbnb",
+            "name": "airbnb",
+            "description": "End to end responsive application built with Angular, Node.js, Express & MongoDB. The app is a clone of Airbnb, it includes a map, advanced search, user authentication, i18n and more.",
+            "image": "/images/airbnb/",
+            "tags": [
+                  "Angular",
+                  "TypeScript",
+                  "Rxjs",
+                  "i18n",
+                  "Node.js",
+                  "Express",
+                  "PWA",
+                  "MongoDB"
+            ],
+            "source": "https://github.com/oferGavrilov/AirBNB-clone",
+            "visit": "https://airbnb-rktw.onrender.com/#/",
+            "id": "2"
+      },
+      {
+            "title": "Mister Bitcoin",
+            "name": "bitcoin",
+            "description": "Using Angular, Rxjs, TypeScript, I have build bitcoin demo app called 'Mister Bitcoin', the app includes demo contacts to transform coins and statistics graphs.",
+            "image": "/images/bitcoin/",
+            "tags": [
+                  "Angular",
+                  "RxJs",
+                  "TypeScript"
+            ],
+            "source": "https://github.com/idandavid1/Mister-BITCoin",
+            "visit": "https://google.com",
+            "id": "1"
+      }
+]

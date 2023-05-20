@@ -1,0 +1,72 @@
+[
+      {
+            "id": "1",
+            "type": "Front-End",
+            "names": [
+                  "React",
+                  "Next",
+                  "Angular"
+            ],
+            "imgUrls": [
+                  "/images/react.png",
+                  "/images/next.png",
+                  "/images/angular.png"
+            ]
+      },
+      {
+            "id": "2",
+            "type": "Back-End",
+            "names": [
+                  "Node.js",
+                  "Express",
+                  "Nest.js",
+                  "Spring Boot"
+            ],
+            "imgUrls": [
+                  "/images/nodejs.png",
+                  "/images/express.png",
+                  "/images/nestjs.png",
+                  "/images/springboot.png"
+            ]
+      },
+      {
+            "id": "3",
+            "type": "Styles",
+            "names": [
+                  "CSS",
+                  "SCSS",
+                  "Tailwind CSS"
+            ],
+            "imgUrls": [
+                  "/images/css.png",
+                  "/images/scss.png",
+                  "/images/tailwind.png"
+            ]
+      },
+      {
+            "id": "4",
+            "type": "Storage & Queue",
+            "names": [
+                  "MySQL",
+                  "MongoDB"
+            ],
+            "imgUrls": [
+                  "/images/mysql.png",
+                  "/images/mongodb.png"
+            ]
+      },
+      {
+            "id": "5",
+            "type": "Programming Languages",
+            "names": [
+                  "JavaScript",
+                  "TypeScript",
+                  "Java"
+            ],
+            "imgUrls": [
+                  "/images/javascript.png",
+                  "/images/typescript.png",
+                  "/images/java.png"
+            ]
+      }
+]
