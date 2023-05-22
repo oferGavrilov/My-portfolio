@@ -32,7 +32,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang='en-GB'>
         <Head>
-          <meta content='#242424'/>
+          <meta name='theme-color' content='#242424'/>
           <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
           <Script async src="https://www.googletagmanager.com/gtag/js?id=G-CB1BSL3NER"></Script>
           <Script id='google-analytics' dangerouslySetInnerHTML={{

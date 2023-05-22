@@ -38,9 +38,6 @@
        }
 
       /* Footer */
-      .footer {
-            @apply pt-6 pb-24;
-      }
 
       .footer-title {
             @apply font-inter font-bold text-[#ffffff66] text-base tracking-wide leading-8 uppercase mb-4;

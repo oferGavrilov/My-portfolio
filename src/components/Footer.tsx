@@ -4,9 +4,9 @@ import SocialLinks from './SocialLinks'
 
 const Footer = (): ReactJSXElement => {
   return (
-    <footer className='footer '>
+    <footer className='pt-6 pb-10 md:pb-24'>
       <div className='w-[90%] mx-auto'>
-        <ul className='flex pt-20 border-t border-[#ffffff20]'>
+        <ul className='flex pt-14 md:pt-20 border-t border-[#ffffff20]'>
           <li className='flex-1'>
             <h4 className='footer-title'>Call</h4>
             <a className='footer-link' href="tel:054-984-3454">054-984-3454</a>
