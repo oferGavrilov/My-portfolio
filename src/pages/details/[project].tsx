@@ -46,7 +46,7 @@ function ProjectDetails (): JSX.Element {
           <p className='custom-paragraph'>{project?.description}</p>
         </div>
       </section>
-      <section className='bg-[#141414] pt-[20vh] px-10'>
+      <section className='bg-[#141414] pt-4 px-10'>
         <div className='py-10'>
           <h2 style={{ color: project?.color, textShadow: `0px 3px 11px ${project?.color}` }} className='text-5xl font-bold py-8'>Architecture</h2>
           <p className='custom-paragraph'>{project?.architecture}</p>
