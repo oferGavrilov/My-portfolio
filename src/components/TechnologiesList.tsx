@@ -9,7 +9,7 @@ interface Props {
 
 export default function TechnologiesList ({ technologies }: Props): JSX.Element {
       return (
-            <ul className='flex flex-col my-8 gap-6 md:grid md:grid-cols-3 md:gap-10 md:my-12'>
+            <ul className='flex flex-col md:mx-12 my-8 gap-6 md:grid md:grid-cols-3 md:gap-10 md:my-12'>
                   {technologies.map(tech => (
                         <li key={tech.id} className='list-item'>
                               <div className='icon-container'>
@@ -18,7 +18,7 @@ export default function TechnologiesList ({ technologies }: Props): JSX.Element 
                                     ))}
                               </div>
                               <div className='list-container'>
-                                    <h4 className='list-title'>{tech.type}</h4>
+                                    <h2 className='list-title'>{tech.type}</h2>
                                     <div className='list-paragraph'>
                                           <span>Experience with</span>
                                           {tech.names.map((name, index) => (

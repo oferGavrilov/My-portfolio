@@ -30,6 +30,8 @@
             "anonymous": "always",
             "named": "always",
             "asyncArrow": "always"
-        }]
+        }],
+        "no-trailing-spaces": "warn",
+        "no-multiple-empty-lines":"off"
     }
 }

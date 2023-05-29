@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hero = (): JSX.Element => (
   <section className='flex  w-[90vw] md:w-auto mx-auto my-10 overflow-hidden'>
-    <div className='flex flex-col mx-auto md:w-full gap-4'>
+    <div className='flex flex-col mx-auto md:w-full gap-4 justify-center'>
       <h2 className='main-title'>
         Welcome To <br />
         My Personal Portfolio

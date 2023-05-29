@@ -21,7 +21,7 @@ row-gap: 5rem;
 @media ${(props) => props.theme.breakpoints.sm} {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 2rem 0rem;
   padding-bottom: 1rem;
 }
 

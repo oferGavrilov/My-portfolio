@@ -13,10 +13,14 @@ const Projects = (): JSX.Element => {
     AOS.refresh()
   }, [])
 
+  function onAlert (): void {
+    alert('This project is not available yet')
+  }
+  console.log(projects)
   return (
     <Section id="projects">
       <SectionTitle data-aos="fade-left">Projects</SectionTitle>
-      <GridContainer>
+      <GridContainer >
         {projects.map((project) => (
           <BlogCard key={project.id} data-aos="fade-up">
             <Link href={`/details/project?id=${project.id}`}>
@@ -25,7 +29,7 @@ const Projects = (): JSX.Element => {
             <TitleContent>
               <HeaderThree>{project.title}</HeaderThree>
             </TitleContent>
-            <p className='text-start leading-snug px-12 tracking-wider md:h-[170px]'>
+            <p className='text-start leading-snug px-12 tracking-wider md:h-[180px]'>
               {project.description}
             </p>
             <Link href={`/details/project?id=${project.id}`}>
@@ -40,7 +44,7 @@ const Projects = (): JSX.Element => {
               </ul>
             </div>
             <UtilityList>
-              <a className='project-btn' href={project.visit} target="_blank" rel="noreferrer"><span>App</span></a>
+              {project.name !== 'netflix' ? <a className='project-btn' href={project.visit} target="_blank" rel="noreferrer"><span>App</span></a> : <a className='project-btn' onClick={onAlert}><span>App</span></a>}
               <a className='project-btn' href={project.source} target="_blank" rel="noreferrer"><span>Source</span></a>
             </UtilityList>
           </BlogCard>
