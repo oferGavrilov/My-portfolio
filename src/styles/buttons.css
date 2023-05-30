@@ -53,14 +53,6 @@
       opacity: 0;
 }
 
-/* @apply sticky py-4 top-4 z-50 flex w-max justify-center flex-col items-center gap-y-4 mx-auto transition-all duration-300 ease-in-out; */
-.slide-left {
-      z-index: 20;
-      position: sticky;
-      -webkit-animation: slide-left 1.2s cubic-bezier(0.680, -0.550, 0.265, 1.550) 3s both;
-      animation: slide-left 1.2s cubic-bezier(0.680, -0.550, 0.265, 1.550) 3s both;
-}
-
 @-webkit-keyframes slide-bottom {
       0% {
             -webkit-transform: translateY(0);
@@ -99,86 +91,6 @@
       }
 }
 
-
-
-@media (max-width: 640px) {
-      @keyframes slide-left {
-            0% {
-                  opacity: 0;
-                  margin-left: 100%;
-            }
-
-            50% {
-                  opacity: 1;
-                  margin-left: 60%;
-            }
-
-            100% {
-                  margin-left: 65%;
-            }
-
-      }
-
-}
-
-@media (min-width: 640px) {
-      @keyframes slide-left {
-            0% {
-                  opacity: 0;
-                  margin-left: 100%;
-            }
-
-            50% {
-                  opacity: 1;
-                  margin-left: 85%;
-            }
-
-            100% {
-                  margin-left: 80%;
-            }
-
-      }
-
-}
-
-@media (min-width:900px) {
-      @keyframes slide-left {
-            0% {
-                  opacity: 0;
-                  margin-left: 100%;
-            }
-
-            50% {
-                  opacity: 1;
-                  margin-left: 83%;
-            }
-
-            100% {
-                  margin-left: 85vw;
-            }
-      }
-}
-
-/* @keyframes slide-left {
-      0% {
-            opacity: 0;
-            -webkit-transform: translateX(100vw);
-            transform: translateX(100vw);
-      }
-
-      50% {
-            opacity: 1;
-            -webkit-transform: translateX(55vw);
-            transform: translateX(55vw);
-      }
-
-      100% {
-            -webkit-transform: translateX(65vw);
-            transform: translateX(65vw);
-      }
-} */
-
-
 .btn-grad {
       background-image: linear-gradient(to right, #314755 0%, #26a0da 41%, #314755 100%);
       padding: 8px 24px;
@@ -212,4 +124,24 @@
       /* change the direction of the change here */
       color: #fff;
       text-decoration: none;
+}
+
+/* bounce */
+
+.bounce {
+      animation: bounce 4s infinite;
+}
+
+@keyframes bounce {
+      0% {
+            transform: translateY(0);
+      }
+
+      60% {
+            transform: translateY(-5px);
+      }
+
+      100% {
+            transform: translateY(2px);
+      }
 }

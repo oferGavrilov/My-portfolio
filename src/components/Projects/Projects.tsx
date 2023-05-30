@@ -1,7 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 
 import React, { useEffect } from 'react'
 import AOS from 'aos'
-import { BlogCard, GridContainer, HeaderThree, Tag, TitleContent, UtilityList, Img } from './ProjectsStyles'
+import { BlogCard, GridContainer, HeaderThree, Tag, TitleContent, UtilityList } from './ProjectsStyles'
 import { Section, SectionTitle } from '../../styles/GlobalComponents'
 import projects from '../../data/projects.json'
 import Link from 'next/link'
@@ -24,7 +25,9 @@ const Projects = (): JSX.Element => {
         {projects.map((project) => (
           <BlogCard key={project.id} data-aos="fade-up">
             <Link href={`/details/project?id=${project.id}`}>
-              <Img src={project.image + project.name + '.png'} />
+              <div className='md:min-h-[330px]'>
+                <img src={project.images[4]} className='aspect-video object-cover opacity-90 transition-opacity duration-200 ease-in-out hover:opacity-100' alt={project.name} />
+              </div>
             </Link>
             <TitleContent>
               <HeaderThree>{project.title}</HeaderThree>

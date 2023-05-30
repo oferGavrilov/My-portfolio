@@ -6,11 +6,12 @@ import technologies from '../data/technologies.json'
 
 import TechnologiesList from './TechnologiesList'
 
-export default function Technologies (): JSX.Element {
+export default function Technologies ({ setIsLoading }: any): JSX.Element {
   useEffect(() => {
     Aos.init({ duration: 1000 })
     Aos.refresh()
   }, [])
+
   return (
     <Section id='tech' data-aos="fade-right">
       <SectionTitle>Technologies</SectionTitle>

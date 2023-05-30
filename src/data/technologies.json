@@ -8,9 +8,9 @@
                   "Angular"
             ],
             "imgUrls": [
-                  "/images/react.png",
-                  "/images/next.png",
-                  "/images/angular.png"
+                  "/images/tech/react.png",
+                  "/images/tech/next.png",
+                  "/images/tech/angular.png"
             ]
       },
       {
@@ -23,10 +23,10 @@
                   "Spring Boot"
             ],
             "imgUrls": [
-                  "/images/nodejs.png",
-                  "/images/express.png",
-                  "/images/nestjs.png",
-                  "/images/springboot.png"
+                  "/images/tech/nodejs.png",
+                  "/images/tech/express.png",
+                  "/images/tech/nestjs.png",
+                  "/images/tech/springboot.png"
             ]
       },
       {
@@ -38,9 +38,9 @@
                   "Tailwind CSS"
             ],
             "imgUrls": [
-                  "/images/css.png",
-                  "/images/scss.png",
-                  "/images/tailwind.png"
+                  "/images/tech/css.png",
+                  "/images/tech/scss.png",
+                  "/images/tech/tailwind.png"
             ]
       },
       {
@@ -51,8 +51,8 @@
                   "MongoDB"
             ],
             "imgUrls": [
-                  "/images/mysql.png",
-                  "/images/mongodb.png"
+                  "/images/tech/mysql.png",
+                  "/images/tech/mongodb.png"
             ]
       },
       {
@@ -64,9 +64,26 @@
                   "Java"
             ],
             "imgUrls": [
-                  "/images/javascript.png",
-                  "/images/typescript.png",
-                  "/images/java.png"
+                  "/images/tech/javascript.png",
+                  "/images/tech/typescript.png",
+                  "/images/tech/java.png"
+            ]
+      },
+      {
+            "id": "6",
+            "type": "Tools",
+            "names": [
+                  "Docker",
+                  "Visual Studio Code",
+                  "Git & GitHub",
+                  "Postman"
+                  
+            ],
+            "imgUrls": [
+                  "/images/tech/docker.png",
+                  "/images/tech/vsc.png",
+                  "/images/tech/postman.png",
+                  "/images/tech/git.png"
             ]
       }
 ]

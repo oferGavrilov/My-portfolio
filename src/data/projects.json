@@ -3,9 +3,17 @@
             "title": "My-Day",
             "name": "myday",
             "description": "Task managment application inspired by Monday.com, this project produced for manage projects and tasks in each way you choose The app is built with React, Redux, Node.js, Express & MongoDB. It includes user authentication, drag & drop, end to end testing, high security and more.",
-            "image": "/images/myday/",
+            "images": [
+                  "/images/myday/large.png",
+                  "/images/myday/desktop.png",
+                  "/images/myday/tablet.jpg",
+                  "/images/myday/mobile.jpg",
+                  "/images/myday/myday.png",
+                  "/images/myday/mockup-desktop.png",
+                  "/images/myday/mockup-mobile.png"
+            ],
             "color": "#2db5ff",
-            "architecture":"This application build with react for front-end side using Redux for state management, Scss & MUI for styling, Axios for HTTP requests, Node.js & Express framework for backend side using routing, request handling and middleware management, MongoDB for database and Mongoose for modeling data. ",
+            "architecture": "This application build with react for front-end side using Redux for state management, Scss & MUI for styling, Axios for HTTP requests, Node.js & Express framework for backend side using routing, request handling and middleware management, MongoDB for database and Mongoose for modeling data. ",
             "tags": [
                   "React",
                   "Redux",
@@ -29,9 +37,17 @@
             "title": "Airbnb",
             "name": "airbnb",
             "description": "Vacation rental application to find and rent places around the world, in this app you can become a host and post your place to everybody or pick a place for your next vacation. built with Angular, Node.js, Express & MongoDB. The app is a clone of Airbnb, it includes a map, advanced search, user authentication, i18n and more.",
-            "image": "/images/airbnb/",
+            "images": [
+                  "/images/airbnb/large.png",
+                  "/images/airbnb/desktop.png",
+                  "/images/airbnb/tablet.jpg",
+                  "/images/airbnb/mobile.jpg",
+                  "/images/airbnb/airbnb.png",
+                  "/images/airbnb/mockup-desktop.png",
+                  "/images/airbnb/mockup-mobile.png"
+            ],
             "color": "#F05252",
-            "architecture":"This application built with Angular for front-end side using MVC architecture, Rxjs for asynchronous programming to handle events, SCSS for styling, RestAPI for HTTP methods, Node.js & Express framework for backend side using routing, request handling and middleware management, MongoDB for database and Mongoose for modeling data.",
+            "architecture": "This application built with Angular for front-end side using MVC architecture, Rxjs for asynchronous programming to handle events, SCSS for styling, RestAPI for HTTP methods, Node.js & Express framework for backend side using routing, request handling and middleware management, MongoDB for database and Mongoose for modeling data.",
             "tags": [
                   "Angular",
                   "TypeScript",
@@ -55,9 +71,17 @@
             "title": "Netflix",
             "name": "netflix",
             "description": "Netflix clone application built with React, Next.js, Tailwind CSS, and deployed on Vercel. The app is a clone of Netflix, it includes a movie trailer, user authentication, and more.",
-            "image": "/images/netflix/",
+            "images": [
+                  "/images/netflix/large.png",
+                  "/images/netflix/desktop.png",
+                  "/images/netflix/tablet.jpg",
+                  "/images/netflix/mobile.jpg",
+                  "/images/netflix/netflix.png",
+                  "/images/netflix/mockup-desktop.png",
+                  "/images/netflix/mockup-mobile.png"
+            ],
             "color": "#B00710",
-            "architecture":"This application built with Next.js for using SSR, React for frontend side, TypeScript as programming language React-Context for state management, Tailwind CSS for styling, RestAPI for HTTP requests and methods manipulation, Firebase for user authentication, TMDB API for movies data, React-player for movie trailers.",
+            "architecture": "This application built with Next.js for using SSR, React for frontend side, TypeScript as programming language React-Context for state management, Tailwind CSS for styling, RestAPI for HTTP requests and methods manipulation, Firebase for user authentication, TMDB API for movies data, React-player for movie trailers.",
             "tags": [
                   "NextJS",
                   "React",
@@ -68,11 +92,46 @@
                   "TMDB API",
                   "Axios",
                   "React-player",
+                  "React-Context",
                   "SSR",
                   "SEO"
             ],
             "source": "https://github.com/oferGavrilov/Netfilx-clone",
             "visit": "<script>alert('Coming soon...')</script>",
             "id": "1"
+      },
+      {
+            "title": "Fafos",
+            "name": "fafos",
+            "description": "Fafos is a e-commerce application built with Next.JS, React, Typescript, Firebase, MongoDB. This app includes a shopping cart, user authentication, admin panel, and more.",
+            "images": [
+                  "/images/fafos/fafos-large.jpg",
+                  "/images/fafos/fafos-desktop.jpg",
+                  "/images/fafos/fafos-tablet.jpg",
+                  "/images/fafos/fafos-mobile.jpg",
+                  "/images/fafos/fafos.jpg",
+                  "/images/fafos/mockup-desktop.png",
+                  "/images/fafos/mockup-mobile.png"
+            ],
+            "color": "#ab54e8ab",
+            "architecture": "This application built with Next.js for using SSR, React for frontend side, TypeScript as programming language React-Context for state management, Tailwind CSS for styling, RestAPI for HTTP requests and methods manipulation andFirebase for user authentication.",
+            "tags": [
+                  "NextJS",
+                  "React",
+                  "TypeScript",
+                  "Docker",
+                  "Tailwind CSS",
+                  "Vercel",
+                  "Firebase",
+                  "MUI",
+                  "React-Context",
+                  "React-player",
+                  "SSR",
+                  "SEO",
+                  "MongoDB"
+            ],
+            "source": "https://github.com/oferGavrilov/Fafos-webshop",
+            "visit": "https://fafos-webshop.vercel.app/",
+            "id": "4"
       }
 ]

@@ -5,9 +5,7 @@
 @tailwind utilities;
 
 @layer base {
-      body {
-            @apply overflow-x-hidden;
-      }
+
 }
 
 @layer components {
@@ -25,7 +23,7 @@
       }
 
       .slide-bottom {
-            @apply sticky py-4 top-4 z-50 flex w-max justify-center flex-col items-center gap-y-4 mx-auto transition-all duration-300 ease-in-out;
+            @apply bg-[#404040] sticky p-4 rounded-2xl shadow-xl top-4 z-50 flex w-max justify-center flex-col items-center gap-y-4 mx-auto transition-all duration-300 ease-in-out;
             -webkit-animation: slide-bottom 0.8s cubic-bezier(0.680, -0.550, 0.265, 1.550) 1s both;
             animation: slide-bottom 0.8s cubic-bezier(0.680, -0.550, 0.265, 1.550) 1s both;
       }
@@ -34,7 +32,7 @@
        }
 
        .slide-left{
-            @apply sticky top-[288px] flex flex-col w-max gap-6 text-center;
+            @apply flex flex-col w-max gap-6 text-center;
        }
 
       /* Footer */
@@ -72,6 +70,9 @@
       .list-paragraph {
             @apply flex flex-col text-2xl md:text-3xl text-[#ffffffbf] tracking-wide leading-10 gap-2;
       }
+      .project-link {
+            @apply py-4 px-6 rounded-xl font-bold transition-colors duration-300 hover:bg-[#5a5a5a2e];
+      }
 
 }
 
@@ -101,6 +102,6 @@
             filter: drop-shadow(3px 2px 9px black);
       }
       .custom-paragraph {
-            @apply text-3xl leading-10 font-bold [word-spacing:10px] max-w-lg custom-shadow md:max-w-5xl;
+            @apply text-3xl leading-10 font-bold [word-spacing:10px] max-w-2xl custom-shadow md:max-w-5xl lg:max-w-7xl;
       }
 }
