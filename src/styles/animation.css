@@ -1,0 +1,74 @@
+.fade {
+      animation-name: fade;
+      animation-duration: .5s;
+}
+
+@keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+}
+
+.loader {
+      width: 250px;
+      animation-name: loader;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-in-out;
+      animation-delay: .4s;
+      animation-timing-function: cubic-bezier(.8, .75, .2, 1.01);
+      transition: all .5s ease-in-out;
+}
+
+@keyframes loader {
+      from {
+            width: 240px;
+            left: 50%;
+            top: 50%;
+      }
+      to {
+            top: 35px;
+            width: 65px;
+            left: 32px;
+      }
+}
+@media (min-width: 768px){
+      @keyframes loader {
+            from {
+                  width: 240px;
+                  left: 50%;
+                  top: 50%;
+            }
+            to {
+                  top: 3.5%;
+                  width: 65px;
+                  left: 60px;
+            }
+      }
+}
+@media (min-width: 1024px){
+      @keyframes loader {
+            from {
+                  width: 240px;
+                  left: 50%;
+                  top: 50%;
+            }
+            to {
+                  top: 3.5%;
+                  width: 65px;
+                  left: 110px;
+            }
+      }
+}
+
+.bounce {
+      animation: bounce 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+  
+  @keyframes bounce {
+        40% {
+              -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+              animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+              -webkit-transform: translateY(20px) rotate(-1deg);
+              transform: translateY(20px) rotate(-1deg);
+            }
+  }

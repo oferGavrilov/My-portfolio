@@ -6,7 +6,7 @@ export default function Layout ({ children }: { children: React.ReactNode }): JS
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main className='fade'>{children}</main>
       <Footer />
     </>
   )

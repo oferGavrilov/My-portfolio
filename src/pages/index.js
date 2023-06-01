@@ -5,7 +5,7 @@ import Technologies from '../components/Technologies'
 import Layout from '../components/Layout'
 import { Section } from '../styles/GlobalComponents'
 import Loader from '../components/Loader'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true)
