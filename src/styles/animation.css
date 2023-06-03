@@ -4,8 +4,13 @@
 }
 
 @keyframes fade {
-      from {opacity: .4}
-      to {opacity: 1}
+      from {
+            opacity: .4
+      }
+
+      to {
+            opacity: 1
+      }
 }
 
 .loader {
@@ -25,19 +30,22 @@
             left: 50%;
             top: 50%;
       }
+
       to {
             top: 35px;
             width: 65px;
             left: 32px;
       }
 }
-@media (min-width: 768px){
+
+@media (min-width: 768px) {
       @keyframes loader {
             from {
                   width: 240px;
                   left: 50%;
                   top: 50%;
             }
+
             to {
                   top: 3.5%;
                   width: 65px;
@@ -45,13 +53,15 @@
             }
       }
 }
-@media (min-width: 1024px){
+
+@media (min-width: 1024px) {
       @keyframes loader {
             from {
                   width: 240px;
                   left: 50%;
                   top: 50%;
             }
+
             to {
                   top: 3.5%;
                   width: 65px;
@@ -62,13 +72,57 @@
 
 .bounce {
       animation: bounce 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-  }
-  
-  @keyframes bounce {
-        40% {
-              -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-              animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-              -webkit-transform: translateY(20px) rotate(-1deg);
-              transform: translateY(20px) rotate(-1deg);
-            }
-  }
+}
+
+@keyframes bounce {
+      40% {
+            -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            -webkit-transform: translateY(20px) rotate(-1deg);
+            transform: translateY(20px) rotate(-1deg);
+      }
+}
+
+.card {
+      width: 90%;
+      height: 254px;
+      background: #07182E;
+      position: relative;
+      display: flex;
+      place-content: center;
+      place-items: center;
+      overflow: hidden;
+      border-radius: 20px;
+}
+
+
+
+.card::before {
+      content: '';
+      position: absolute;
+      width: 100px;
+      background-image: linear-gradient(180deg, rgb(157, 169, 238), rgb(31, 74, 230));
+      height: 300%;
+      animation: rotBGimg 4.5s linear infinite;
+      transition: all 0.2s linear;
+
+}
+
+@keyframes rotBGimg {
+      from {
+            transform: rotate(0deg);
+      }
+
+      to {
+            transform: rotate(360deg);
+      }
+}
+
+.card::after {
+      content: '';
+      position: absolute;
+      background: #07182E;
+      ;
+      inset: 3px;
+      border-radius: 15px;
+}

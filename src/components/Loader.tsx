@@ -1,15 +1,21 @@
-import React, { useEffect } from 'react'
-function Loader ({ isLoading, setIsLoading }: { isLoading: boolean, setIsLoading: () => void }): JSX.Element {
+import React, { type Dispatch, type SetStateAction, useEffect } from 'react'
+
+interface Props {
+  isLoading: boolean
+  setIsLoading: Dispatch<SetStateAction<boolean>>
+}
+
+function Loader ({ isLoading, setIsLoading }: Props): JSX.Element {
   useEffect(() => {
     setTimeout(() => {
-      setIsLoading()
+      setIsLoading(false)
     }, 1900)
   }, [setIsLoading])
 
   if (!isLoading) return <div></div>
 
   return (
-      <img src='logo.gif' className='loader'/>
+    <img src='logo.gif' className='loader' />
   )
 }
 

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Inter&family=Outfit&family=Raleway:wght@600&family=Roboto+Slab&display=swap');
 @import "aos/dist/aos.css";
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -51,24 +53,30 @@
       }
 
       /* Projects */
+      .grid-container {
+            @apply flex flex-col mx-auto p-2 pb-24 md:grid md:pt-12 md:px-12 md:pb-24 md:place-items-center gap-y-24 gap-x-20 ;
+                  grid-template-columns: repeat(auto-fit, minmax(470px,1fr ));
+
+      }
+
       .list-container {
-            @apply flex flex-col pl-1;
+            @apply flex flex-col text-center;
       }
 
       .icon-container {
-            @apply flex gap-x-4 pb-2;
+            @apply flex gap-x-4 pb-2 justify-center -mt-14;
       }
 
       .list-item {
-            @apply max-w-[320px] mb-3 md:mb-0 flex flex-col md:max-w-[203px];
+            @apply max-w-[320px] mb-3 md:mb-0 flex flex-col md:max-w-[203px] absolute z-10;
       }
 
       .list-title {
-            @apply font-bold text-3xl md:text-4xl lg:text-5xl tracking-wide text-white my-2
+            @apply font-bold text-3xl md:text-4xl lg:text-5xl tracking-wide text-white my-2 pb-2
       }
 
       .list-paragraph {
-            @apply flex flex-col text-2xl md:text-3xl text-[#ffffffbf] tracking-wide leading-10 gap-2;
+            @apply flex flex-col text-2xl md:text-3xl text-[#ffffffbf] tracking-wide leading-10 gap-2 min-h-[90px] ;
       }
       .project-link {
             @apply py-4 px-6 rounded-xl font-bold transition-colors duration-300 hover:bg-[#5a5a5a2e];
@@ -91,6 +99,8 @@
             background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            width: max-content;
+            max-width: 100%;
       }
 
       .logo {
