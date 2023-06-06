@@ -1,10 +1,27 @@
 ## My Portfolio
 
 
-Hi everyone! this is a portfolio website that includes my favorite projects, [here is my portfolio link](https://my-protfolio-nextjs.vercel.app/)
+Hi everyone! this is a portfolio website that includes my favorite projects, [here is my portfolio link](https://ofergavriel.vercel.app/)
 
-This application deployed on Vercel and this method will work for SSR(Server Side Rendering)
+This portfolio built with NextJS, Typescript, TailwindCSS and deployed on Vercel.
 
-I'm built this application using React.js, StyledComponents, Next.js and Vercel for deployment.
+## Landing Page
+#### Hero
 
-![Portfolio Website](public/readme/readme-home.png)
+![Hero](public/readme/hero.png "Hero image")
+
+#### Projects
+
+![Projects](public/readme/projects.png "Projects")
+
+#### Technologies
+
+![Technologies](public/readme/tech.png "Technologies")
+
+## Project Page
+
+![Project](public/readme/project.png "Project")
+
+![View more](public/readme/view-more.png"View more")
+
+
