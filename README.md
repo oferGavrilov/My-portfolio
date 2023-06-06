@@ -22,6 +22,6 @@ This portfolio built with NextJS, Typescript, TailwindCSS and deployed on Vercel
 
 ![Project](public/readme/project.png "Project")
 
-![View more](public/readme/view-more.png"View more")
+![View more](public/readme/view-more.png "View more")
 
 
