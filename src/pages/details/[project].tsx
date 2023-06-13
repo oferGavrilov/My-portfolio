@@ -10,13 +10,11 @@ import Link from 'next/link'
 import { AiFillHome } from 'react-icons/ai'
 
 function ProjectDetails (): JSX.Element {
-  const [project, setProject] = useState<Project | null | undefined>(null)
+  const [project, setProject] = useState<Project | null>(null)
   const { id } = useRouter().query
-  
 
   useEffect(() => {
     const data = projects.find(project => project.id === id)
-    // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
     if (!data) return
     setProject(data)
   }, [id])
@@ -27,7 +25,7 @@ function ProjectDetails (): JSX.Element {
       <Link href="/" className='slide-bottom text-4xl'>
         <AiFillHome />
       </Link>
-      <section className=''>
+      <section className='fade'>
         <div className="hero-container">
           <img className="project-image hero-img-large" src={project?.images[0]} alt={project?.title} />
           <img className="project-image hero-img-desktop" src={project?.images[1]} alt={project?.title} />

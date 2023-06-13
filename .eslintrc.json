@@ -32,6 +32,8 @@
             "asyncArrow": "always"
         }],
         "no-trailing-spaces": "warn",
-        "no-multiple-empty-lines":"off"
+        "no-multiple-empty-lines":"off",
+        "@typescript-eslint/strict-boolean-expressions": "off",
+        "@typescript-eslint/indent": "off"
     }
 }

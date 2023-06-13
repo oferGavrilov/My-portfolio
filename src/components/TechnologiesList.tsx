@@ -18,7 +18,7 @@ export default function TechnologiesList ({ technologies }: Props): JSX.Element 
       return (
             <ul className='w-full place-items-center my-8 gap-y-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-y-16 lg:gap-y-24 md:my-12'>
                   {technologies.map(tech => (
-                        <div key={tech.id} className='card shadow-xl shadow-blue-900' data-aos="fade-right">
+                        <div key={tech.id} className='card shadow-xl shadow-[#0e1a3f]' data-aos="fade-right">
                               <li className='list-item '>
                                     <div className='icon-container '>
                                           {tech.imgUrls.map((img, index) => (
