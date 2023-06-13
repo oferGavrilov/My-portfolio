@@ -7,15 +7,17 @@ import '../styles/hero-container.css'
 import '../styles/animation.css'
 import { useState } from 'react'
 import Loader from '../components/Loader'
+import { useRouter } from 'next/router'
 
 export default function App ({ Component, pageProps }: AppProps): JSX.Element {
-  const [isLoading, setIsLoading] = useState<boolean>(true)
+  const { pathname } = useRouter()
+  const [isLoading, setIsLoading] = useState<boolean>(pathname === '/')
 
   return (
     <Theme>
       {!isLoading
         ? (
-        <Component {...pageProps} />)
+          <Component {...pageProps} />)
         : (<Loader isLoading={isLoading} setIsLoading={setIsLoading} />)
       }
     </Theme>

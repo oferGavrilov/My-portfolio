@@ -64,7 +64,7 @@
       }
 
       .icon-container {
-            @apply flex gap-x-4 pb-2 justify-center -mt-14;
+            @apply flex gap-x-4 pb-2 justify-center -mt-6;
       }
 
       .list-item {

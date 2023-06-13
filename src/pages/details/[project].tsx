@@ -8,9 +8,11 @@ import projects from '../../data/projects.json'
 import { type Project } from '../../model/project.model'
 import Link from 'next/link'
 import { AiFillHome } from 'react-icons/ai'
+
 function ProjectDetails (): JSX.Element {
   const [project, setProject] = useState<Project | null | undefined>(null)
   const { id } = useRouter().query
+  
 
   useEffect(() => {
     const data = projects.find(project => project.id === id)
@@ -18,6 +20,7 @@ function ProjectDetails (): JSX.Element {
     if (!data) return
     setProject(data)
   }, [id])
+
 
   return (
     <>

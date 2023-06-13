@@ -4,6 +4,12 @@
       width:100vw;
       height:95vh;
       z-index:-10;
+      
+    }
+    @media screen and (min-width:768px){
+        .hero-container{
+            height: 115vh;
+        }
     }
     
     .back-image {

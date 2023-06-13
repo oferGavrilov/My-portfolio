@@ -50,6 +50,7 @@
                   top: 3.5%;
                   width: 65px;
                   left: 60px;
+
             }
       }
 }
@@ -60,12 +61,14 @@
                   width: 240px;
                   left: 50%;
                   top: 50%;
+                  opacity: .8;
             }
 
             to {
                   top: 3.5%;
                   width: 65px;
                   left: 110px;
+                  opacity: .8;
             }
       }
 }
