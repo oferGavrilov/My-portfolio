@@ -26,14 +26,20 @@
         "indent": "off",
         "no-unused-vars": "off",
         "react/react-in-jsx-scope": "off",
-        "space-before-function-paren": ["error", {
-            "anonymous": "always",
-            "named": "always",
-            "asyncArrow": "always"
-        }],
+        "space-before-function-paren": [
+            "error",
+            {
+                "anonymous": "always",
+                "named": "always",
+                "asyncArrow": "always"
+            }
+        ],
         "no-trailing-spaces": "warn",
-        "no-multiple-empty-lines":"off",
+        "no-multiple-empty-lines": "off",
         "@typescript-eslint/strict-boolean-expressions": "off",
-        "@typescript-eslint/indent": "off"
+        "@typescript-eslint/indent": "off",
+        "@typescript-eslint/restrict-plus-operands": "off",
+        "@next/next/no-img-element": "off",
+        "@typescript-eslint/restrict-template-expressions": "off"
     }
 }

@@ -1,7 +1,5 @@
 import React from 'react'
 
-// import { Svg } from './LogoStyles'
-
 function Logo (): JSX.Element {
   return (
     <svg fill="#6cbaea" viewBox="0 0 256.00 256.00" id="Flat" xmlns="http://www.w3.org/2000/svg" stroke="#6cbaea" strokeWidth="0.512" transform="matrix(1, 0, 0, 1, 0, 0)">

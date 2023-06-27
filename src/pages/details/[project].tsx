@@ -1,7 +1,3 @@
-/* eslint-disable @typescript-eslint/restrict-template-expressions */
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable @typescript-eslint/restrict-plus-operands */
-/* eslint-disable @typescript-eslint/indent */
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 import projects from '../../constants/projects.json'
@@ -18,7 +14,6 @@ function ProjectDetails (): JSX.Element {
     if (!data) return
     setProject(data)
   }, [id])
-
 
   return (
     <>

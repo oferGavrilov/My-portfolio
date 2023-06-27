@@ -1,6 +1,3 @@
-/* eslint-disable @typescript-eslint/strict-boolean-expressions */
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable @typescript-eslint/indent */
 import React, { useEffect } from 'react'
 import Image from 'next/image'
 import { type Technology } from '../model/project.model'

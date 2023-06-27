@@ -2,37 +2,36 @@
 @import "aos/dist/aos.css";
 @import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
       body {
-            @apply font-space-grotesk text-[1.6rem] bg-[#0F1624] text-customColor cursor-default;
+            @apply font-space-grotesk text-[1.6rem] bg-[#0F1624] text-customColor cursor-default custom-scrollbar;
       }
-
 }
 
-* {
-      scroll-behavior: smooth !important;
+.custom-scrollbar {
       scrollbar-width: thin;
-      scrollbar-color: #878787 #D9D9D9;
+      scrollbar-color: #a5a5a6 #d9d9d9;
+    }
     
-      &::-webkit-scrollbar {
-          width: 8px;
-          cursor: pointer;
-      }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 8px;
+      cursor: pointer;
+    }
     
-      &::-webkit-scrollbar-track {
-          background: #D9D9D9;
-      }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #D9D9D9;
+    }
     
-      &::-webkit-scrollbar-thumb {
-          border-radius: 25px;
-          background-color: #A6A5A5;
-          cursor: pointer;
-      }
-}
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      border-radius: 25px;
+      background-color: #A6A5A5;
+      cursor: pointer;
+    }
 
 html {
       font-size: 62.5%;
@@ -102,7 +101,7 @@ html {
       }
 
       .list-title {
-            @apply font-bold text-3xl md:text-4xl lg:text-5xl tracking-wide text-white my-2 pb-2
+            @apply font-bold text-3xl md:text-4xl lg:text-5xl tracking-wide text-white my-2 pb-2;
       }
 
       .list-paragraph {
@@ -116,18 +115,19 @@ html {
 
 @layer utilities {
       .section-title {
-            @apply text-6xl font-extrabold w-max max-w-full;
+            @apply text-6xl font-extrabold w-max max-w-full mb-4;
             background: linear-gradient(121.57deg,
                         #ffffff 18.77%,
                         rgba(255, 255, 255, 0.66) 60.15%);
+            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 16px;
       }
 
       .text-gradient {
             background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             width: max-content;
             max-width: 100%;
@@ -135,6 +135,7 @@ html {
 
       .logo {
             background: linear-gradient(121.57deg, #a8dadc 31.77%, #457b9d 90.15%);
+            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
       }
@@ -149,4 +150,6 @@ html {
             @apply grid mx-auto px-8 md:px-20 pt-8 md:pt-6 pb-32;
             grid-template-columns: 1fr 1fr;
       }
+
+  
 }

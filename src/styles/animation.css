@@ -15,6 +15,10 @@
 
 .loader {
       width: 250px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       animation-name: loader;
       animation-duration: 2s;
       animation-fill-mode: forwards;
