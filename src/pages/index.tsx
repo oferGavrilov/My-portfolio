@@ -3,20 +3,17 @@ import Hero from '../components/Hero'
 import Projects from '../components/Projects'
 import Technologies from '../components/Technologies'
 import Layout from '../components/Layout'
-import { Section } from '../styles/GlobalComponents'
-import Loader from '../components/Loader'
-import { useState } from 'react'
 
-const Home = () => {
+const Home = (): JSX.Element => {
   return (
     <Layout>
-      <Section grid>
+      <main className='custom-grid'>
         <Hero />
         <BgAnimation />
-      </Section>
+      </main>
       <Projects />
       <Technologies />
-    </Layout>
+    </Layout >
   )
 }
 

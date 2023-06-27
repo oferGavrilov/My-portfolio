@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import AOS from 'aos'
-import projects from '../data/projects.json'
+import projects from '../constants/projects.json'
 import Link from 'next/link'
 import Button from './custom/Button'
 

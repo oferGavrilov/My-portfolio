@@ -4,7 +4,7 @@
 /* eslint-disable @typescript-eslint/indent */
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
-import projects from '../../data/projects.json'
+import projects from '../../constants/projects.json'
 import { type Project } from '../../model/project.model'
 import Link from 'next/link'
 import { AiFillHome } from 'react-icons/ai'

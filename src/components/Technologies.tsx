@@ -1,5 +1,5 @@
 import React from 'react'
-import technologies from '../data/technologies.json'
+import technologies from '../constants/technologies.json'
 import TechnologiesList from './TechnologiesList'
 
 export default function Technologies (): JSX.Element {

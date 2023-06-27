@@ -1,5 +1,4 @@
 import '../styles/globals.css'
-import Theme from '../styles/theme'
 import { type AppProps } from 'next/app'
 import '../styles/Loader.css'
 import '../styles/buttons.css'
@@ -14,12 +13,12 @@ export default function App ({ Component, pageProps }: AppProps): JSX.Element {
   const [isLoading, setIsLoading] = useState<boolean>(pathname === '/')
 
   return (
-    <Theme>
+    <>
       {!isLoading
         ? (
           <Component {...pageProps} />)
         : (<Loader isLoading={isLoading} setIsLoading={setIsLoading} />)
       }
-    </Theme>
+    </>
   )
 }

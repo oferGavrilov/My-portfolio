@@ -7,7 +7,37 @@
 @tailwind utilities;
 
 @layer base {
+      body {
+            @apply font-space-grotesk text-[1.6rem] bg-[#0F1624] text-customColor cursor-default;
+      }
 
+}
+
+* {
+      scroll-behavior: smooth !important;
+      scrollbar-width: thin;
+      scrollbar-color: #878787 #D9D9D9;
+    
+      &::-webkit-scrollbar {
+          width: 8px;
+          cursor: pointer;
+      }
+    
+      &::-webkit-scrollbar-track {
+          background: #D9D9D9;
+      }
+    
+      &::-webkit-scrollbar-thumb {
+          border-radius: 25px;
+          background-color: #A6A5A5;
+          cursor: pointer;
+      }
+}
+
+html {
+      font-size: 62.5%;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
 }
 
 @layer components {
@@ -17,7 +47,7 @@
       }
 
       .main-title {
-            @apply text-[25px] md:text-[34px] lg:text-[48px] tracking-wide mb-2 py-4 max-w-full font-extrabold text-gradient;
+            @apply text-5xl  lg:text-[48px] tracking-wide mb-2 py-4 max-w-full font-extrabold text-gradient;
       }
 
       .social-icon {
@@ -113,5 +143,10 @@
       }
       .custom-paragraph {
             @apply text-3xl leading-10 font-bold [word-spacing:10px] max-w-2xl custom-shadow md:max-w-5xl lg:max-w-7xl;
+      }
+
+      .custom-grid {
+            @apply grid mx-auto px-8 md:px-20 pt-8 md:pt-6 pb-32;
+            grid-template-columns: 1fr 1fr;
       }
 }

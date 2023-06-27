@@ -10,7 +10,11 @@ module.exports = {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
         slabo: ['Slabo', 'serif'],
-        nunito: ['Nunito', 'sans-serif']
+        nunito: ['Nunito', 'sans-serif'],
+        'space-grotesk': ['Space Grotesk', 'sans-serif']
+      },
+      colors: {
+        customColor: 'hsl(204, 23.8%, 95.9%)'
       }
     }
   },
