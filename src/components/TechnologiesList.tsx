@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import Image from 'next/image'
 import { type Technology } from '../model/project.model'
 import Aos from 'aos'
 
@@ -19,7 +18,7 @@ export default function TechnologiesList ({ technologies }: Props): JSX.Element 
                               <li className='list-item '>
                                     <div className='icon-container '>
                                           {tech.imgUrls.map((img, index) => (
-                                                <Image key={index} loading='eager' alt={img} src={img} width="30" height="30" />
+                                                <img key={index} alt={img} src={img} width="35" height="30" />
                                           ))}
                                     </div>
                                     <div className='list-container '>

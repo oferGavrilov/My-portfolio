@@ -6,7 +6,7 @@ export default function Layout ({ children }: { children: React.ReactNode }): JS
   return (
     <>
       <Header />
-      <main className='fade'>{children}</main>
+      <main className='fade scroll-smooth'>{children}</main>
       <Footer />
     </>
   )

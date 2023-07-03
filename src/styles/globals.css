@@ -93,15 +93,15 @@ html {
       }
 
       .icon-container {
-            @apply flex gap-x-4 pb-2 justify-center -mt-6;
+            @apply flex gap-x-4 pb-2 justify-center;
       }
 
       .list-item {
-            @apply max-w-[320px] mb-3 md:mb-0 flex flex-col md:max-w-[203px] absolute z-10;
+            @apply max-w-[320px] mb-3 md:mb-0 flex flex-col  absolute z-10;
       }
 
       .list-title {
-            @apply font-bold text-3xl md:text-4xl lg:text-5xl tracking-wide text-white my-2 pb-2;
+            @apply font-bold w-full text-3xl md:text-4xl lg:text-5xl tracking-wide text-white my-2 pb-2;
       }
 
       .list-paragraph {

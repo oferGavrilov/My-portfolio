@@ -8,9 +8,9 @@
                   "Angular"
             ],
             "imgUrls": [
-                  "/images/tech/react.png",
-                  "/images/tech/next.png",
-                  "/images/tech/angular.png"
+                  "https://skillicons.dev/icons?i=react&theme=dark",
+                  "https://skillicons.dev/icons?i=next&theme=dark",
+                  "https://skillicons.dev/icons?i=angular&theme=dark"
             ]
       },
       {
@@ -20,13 +20,13 @@
                   "Node.js",
                   "Express",
                   "Nest.js",
-                  "Spring Boot"
+                  "Django"
             ],
             "imgUrls": [
-                  "/images/tech/nodejs.png",
-                  "/images/tech/express.png",
-                  "/images/tech/nestjs.png",
-                  "/images/tech/springboot.png"
+                  "https://skillicons.dev/icons?i=nodejs&theme=dark",
+                  "https://skillicons.dev/icons?i=express&theme=dark",
+                  "https://skillicons.dev/icons?i=nestjs&theme=dark",
+                  "https://skillicons.dev/icons?i=django&theme=dark"
             ]
       },
       {
@@ -34,13 +34,13 @@
             "type": "Styles",
             "names": [
                   "CSS",
-                  "SCSS",
+                  "SASS",
                   "Tailwind CSS"
             ],
             "imgUrls": [
-                  "/images/tech/css.png",
-                  "/images/tech/scss.png",
-                  "/images/tech/tailwind.png"
+                  "https://skillicons.dev/icons?i=css&theme=light",
+                  "https://skillicons.dev/icons?i=sass&theme=light",
+                  "https://skillicons.dev/icons?i=tailwind"
             ]
       },
       {
@@ -48,11 +48,15 @@
             "type": "Storage & Queue",
             "names": [
                   "MySQL",
-                  "MongoDB"
+                  "MongoDB",
+                  "PostgreSQL",
+                  "Firebase"
             ],
             "imgUrls": [
-                  "/images/tech/mysql.png",
-                  "/images/tech/mongodb.png"
+                  "https://skillicons.dev/icons?i=mysql&theme=dark",
+                  "https://skillicons.dev/icons?i=mongodb&theme=light",
+                  "https://skillicons.dev/icons?i=postgresql&theme=dark",
+                  "https://skillicons.dev/icons?i=firebase&theme=dark"
             ]
       },
       {
@@ -61,12 +65,12 @@
             "names": [
                   "JavaScript",
                   "TypeScript",
-                  "Java"
+                  "Python"
             ],
             "imgUrls": [
-                  "/images/tech/javascript.png",
-                  "/images/tech/typescript.png",
-                  "/images/tech/java.png"
+                  "https://skillicons.dev/icons?i=js&theme=light",
+                  "https://skillicons.dev/icons?i=ts&theme=light",
+                  "https://skillicons.dev/icons?i=py&theme=dark"
             ]
       },
       {

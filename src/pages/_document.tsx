@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-title-in-document-head */
 import Document, { Html, Head, Main, NextScript, type DocumentContext, type DocumentInitialProps } from 'next/document'
 import Script from 'next/script'
 
@@ -9,7 +10,7 @@ class MyDocument extends Document {
 
   render (): JSX.Element {
     return (
-      <Html lang='en-GB'>
+      <Html lang='en-GB' className='scroll-smooth'>
         <Head>
           <meta name='theme-color' content='#242424' />
           <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -24,8 +25,9 @@ class MyDocument extends Document {
               });
             `
           }} />
+          <title>Ofer Gavriel</title>
         </Head>
-        <body>
+        <body className='scroll-smooth'>
           <Main />
           <NextScript />
         </body>

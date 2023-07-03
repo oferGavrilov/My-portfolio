@@ -15,7 +15,7 @@ const Projects = (): JSX.Element => {
   }
 
   return (
-    <section className='flex flex-col pt-8 px-4 md:px-12 mx-auto' id='projects'>
+    <section className='flex flex-col pt-8 px-4 md:px-12 lg:px-28 mx-auto' id='projects'>
       <h2 className='font-extrabold text-6xl md:text-8xl text-gradient mb-7 ml-3 md:ml-12' data-aos="fade-left">Projects</h2>
       <div className='grid-container'>
         {projects.map((project) => (
