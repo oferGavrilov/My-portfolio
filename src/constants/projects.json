@@ -68,39 +68,6 @@
             "id": "2"
       },
       {
-            "title": "Netflix",
-            "name": "netflix",
-            "description": "Netflix clone application built with React, Next.js, Tailwind CSS, and deployed on Vercel. The app is a clone of Netflix, it includes a movie trailer, user authentication, and more.",
-            "images": [
-                  "/images/netflix/large.png",
-                  "/images/netflix/desktop.png",
-                  "/images/netflix/tablet.jpg",
-                  "/images/netflix/mobile.jpg",
-                  "/images/netflix/netflix.png",
-                  "/images/netflix/mockup-desktop.png",
-                  "/images/netflix/mockup-mobile.png"
-            ],
-            "color": "#B00710",
-            "architecture": "This application built with Next.js for using SSR, React for frontend side, TypeScript as programming language React-Context for state management, Tailwind CSS for styling, RestAPI for HTTP requests and methods manipulation, Firebase for user authentication, TMDB API for movies data, React-player for movie trailers.",
-            "tags": [
-                  "NextJS",
-                  "React",
-                  "TypeScript",
-                  "Tailwind CSS",
-                  "Vercel",
-                  "Firebase",
-                  "TMDB API",
-                  "Axios",
-                  "React-player",
-                  "React-Context",
-                  "SSR",
-                  "SEO"
-            ],
-            "source": "https://github.com/oferGavrilov/Netfilx-clone",
-            "visit": "https://netfilx-clone-de1j0i8a6-ofergavrilov.vercel.app/",
-            "id": "1"
-      },
-      {
             "title": "Fafos",
             "name": "fafos",
             "description": "Fafos is a e-commerce application built with Next.JS, React, Typescript, Firebase, MongoDB. This app includes a shopping cart, user authentication, admin panel, and more.",
