@@ -1,20 +1,15 @@
 import { useRouter } from 'next/router'
-import React, { useEffect, useState } from 'react'
 import projects from '../../constants/projects.json'
 import { type Project } from '../../model/project.model'
 import Link from 'next/link'
 import { AiFillHome } from 'react-icons/ai'
 
 function ProjectDetails (): JSX.Element {
-  const [project, setProject] = useState<Project | null>(null)
-  const { id } = useRouter().query
+  const router = useRouter()
+  const { id } = router.query
+  const project: Project | undefined = projects.find(project => project.id === id)
 
-  useEffect(() => {
-    const data = projects.find(project => project.id === id)
-    if (!data) return
-    setProject(data)
-  }, [id])
-
+  if (!project) void router.push('/')
   return (
     <>
       <Link href="/" className='slide-bottom text-4xl'>
