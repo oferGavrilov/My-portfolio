@@ -40,6 +40,7 @@
         "@typescript-eslint/indent": "off",
         "@typescript-eslint/restrict-plus-operands": "off",
         "@next/next/no-img-element": "off",
-        "@typescript-eslint/restrict-template-expressions": "off"
+        "@typescript-eslint/restrict-template-expressions": "off",
+        "react/prop-types": "off"
     }
 }

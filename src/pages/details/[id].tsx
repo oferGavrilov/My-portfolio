@@ -1,15 +1,21 @@
-import { useRouter } from 'next/router'
+import { type NextPage, type GetServerSideProps } from 'next'
 import projects from '../../constants/projects.json'
 import { type Project } from '../../model/project.model'
 import Link from 'next/link'
 import { AiFillHome } from 'react-icons/ai'
 
-function ProjectDetails (): JSX.Element {
-  const router = useRouter()
-  const { id } = router.query
-  const project: Project | undefined = projects.find(project => project.id === id)
+interface ProjectDetailsProps {
+  project: Project | undefined
+}
 
-  if (!project) void router.push('/')
+const ProjectDetails: NextPage<ProjectDetailsProps> = ({ project }) => {
+  if (!project) {
+    return (
+      <div>
+        Project not found.
+      </div>
+    )
+  }
   return (
     <>
       <Link href="/" className='slide-bottom text-4xl'>
@@ -52,5 +58,24 @@ function ProjectDetails (): JSX.Element {
     </>
   )
 }
-
 export default ProjectDetails
+
+export const getServerSideProps: GetServerSideProps<ProjectDetailsProps> = async (context) => {
+  const { id } = context.params ?? {}
+  const project: Project | undefined = projects.find((project) => project.id === id)
+
+  if (!project) {
+    return {
+      redirect: {
+        destination: '/',
+        permanent: false
+      }
+    }
+  }
+
+  return {
+    props: {
+      project
+    }
+  }
+}

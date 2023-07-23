@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "watch": "npx tailwindcss -i src/input.css -o dist/output.css --watch",
-    "start": "cross-env TAILWIND_MODE=watch craco start",
+    "start": "next start",
     "tsc": "tsc",
     "lint": "next lint",
     "lint:watch": "npm run lint -- --watch"
