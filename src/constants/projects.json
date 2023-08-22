@@ -1,37 +1,37 @@
 [
       {
-            "title": "My-Day",
+            "title": "Rolling",
             "name": "myday",
-            "description": "Task managment application inspired by Monday.com, this project produced for manage projects and tasks in each way you choose The app is built with React, Redux, Node.js, Express & MongoDB. It includes user authentication, drag & drop, end to end testing, high security and more.",
+            "description": "A Real-time Messaging Platform powered by React, Vite, Node.js Express and Typescript. Seamlessly integrates sockets for live chat experience, One-on-one chats, groups chats, enriched by diverse message formats including text, audio, images and files.Using MongoDB with Mongoose for data integrity, user authentication and for advanced and scalable communication.",
             "images": [
-                  "/images/myday/large.png",
-                  "/images/myday/desktop.png",
-                  "/images/myday/tablet.jpg",
-                  "/images/myday/mobile.jpg",
-                  "/images/myday/myday.png",
-                  "/images/myday/mockup-desktop.png",
-                  "/images/myday/mockup-mobile.png"
+                  "/images/rolling/large.png",
+                  "/images/rolling/large.png",
+                  "/images/rolling/desktop.png",
+                  "/images/rolling/tablet.jpg",
+                  "/images/rolling/mobile.jpg",
+                  "/images/rolling/chat-light.png",
+                  "/images/rolling/mockup-desktop.png",
+                  "/images/rolling/mockup-mobile.png"
             ],
-            "color": "#2db5ff",
+            "color": "#0099ff",
             "architecture": "This application build with react for front-end side using Redux for state management, Scss & MUI for styling, Axios for HTTP requests, Node.js & Express framework for backend side using routing, request handling and middleware management, MongoDB for database and Mongoose for modeling data. ",
             "tags": [
                   "React",
-                  "Redux",
-                  "Scss",
-                  "MUI",
-                  "JWT",
-                  "PWA",
+                  "Zustand",
+                  "TailwindCSS",
+                  "Vite",
+                  "TypeScript",
                   "Socket.io",
                   "Express",
                   "Node.js",
-                  "Axios",
-                  "RestAPI",
                   "MongoDB",
-                  "Jest"
+                  "Mongoose",
+                  "JWT"
             ],
-            "source": "https://github.com/idandavid1/My-Day",
-            "visit": "https://monday-8oy3.onrender.com/",
-            "id": "0"
+            "mainImg": "/images/rolling/chat-light.png",
+            "source": "https://github.com/oferGavrilov/Rolling-chat-messenger",
+            "visit": "https://rolling-chat-messenger.vercel.app",
+            "id": "1"
       },
       {
             "title": "Airbnb",
@@ -63,9 +63,45 @@
                   "JWT",
                   "MongoDB"
             ],
+            "mainImg": "/images/airbnb/airbnb.png",
             "source": "https://github.com/oferGavrilov/AirBNB-clone",
             "visit": "https://airbnb-rktw.onrender.com/#/",
             "id": "2"
+      },
+      {
+            "title": "My-Day",
+            "name": "myday",
+            "description": "Task managment application inspired by Monday.com, this project produced for manage projects and tasks in each way you choose The app is built with React, Redux, Node.js, Express & MongoDB. It includes user authentication, drag & drop, end to end testing, high security and more.",
+            "images": [
+                  "/images/myday/large.png",
+                  "/images/myday/desktop.png",
+                  "/images/myday/tablet.jpg",
+                  "/images/myday/mobile.jpg",
+                  "/images/myday/myday.png",
+                  "/images/myday/mockup-desktop.png",
+                  "/images/myday/mockup-mobile.png"
+            ],
+            "color": "#2db5ff",
+            "architecture": "This application build with react for front-end side using Redux for state management, Scss & MUI for styling, Axios for HTTP requests, Node.js & Express framework for backend side using routing, request handling and middleware management, MongoDB for database and Mongoose for modeling data. ",
+            "tags": [
+                  "React",
+                  "Redux",
+                  "Scss",
+                  "MUI",
+                  "JWT",
+                  "PWA",
+                  "Socket.io",
+                  "Express",
+                  "Node.js",
+                  "Axios",
+                  "RestAPI",
+                  "MongoDB",
+                  "Jest"
+            ],
+            "mainImg": "/images/myday/myday.png",
+            "source": "https://github.com/idandavid1/My-Day",
+            "visit": "https://monday-8oy3.onrender.com/",
+            "id": "0"
       },
       {
             "title": "Fafos",
@@ -96,6 +132,7 @@
                   "SEO",
                   "MongoDB"
             ],
+            "mainImg": "/images/fafos/fafos.jpg",
             "source": "https://github.com/oferGavrilov/Fafos-webshop",
             "visit": "https://fafos-webshop.vercel.app/",
             "id": "4"

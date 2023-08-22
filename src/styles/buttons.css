@@ -14,7 +14,7 @@
       font-family: inherit;
       font-weight: 500;
       color: #f1faee;
-      background-color: #457b9d;
+      background-color: #39a7ed;
 
       @media (min-width: 768px) {
             width: 150px;
@@ -45,7 +45,7 @@
 }
 
 .project-btn::after {
-      background-color: #a8dadc;
+      background-color: #39a7ed;
 }
 
 .project-btn:hover::after {

@@ -6,19 +6,21 @@ import Button from './custom/Button'
 const Projects = (): JSX.Element => {
   return (
     <section className='flex flex-col pt-8 px-4 md:px-12 lg:px-28 mx-auto' id='projects'>
-      <h2 className='font-extrabold text-6xl md:text-8xl text-gradient mb-7 ml-3 md:ml-12' >Projects</h2>
+      <h2 className='font-extrabold text-6xl md:text-8xl text-gradient mb-7 ml-3 md:ml-12'>Projects</h2>
       <div className='grid-container'>
         {projects.map((project) => (
           <div key={project.id} data-aos="fade-up" className=' rounded-xl shadow-slate-700 shadow-2xl text-center'>
             <Link href={`/details/${project.id}`} as={`/details/${project.id}`}>
               <div className='back-image'>
-                <img src={project.images[4]} className='-z-10 aspect-video object-cover opacity-90 animate-opacity-100 transition-opacity duration-200 ease-in-out hover:opacity-100' alt={project.name} />
+                <img src={project.mainImg} className='-z-10 aspect-video object-cover object-top opacity-90 animate-opacity-100 transition-opacity duration-200 ease-in-out hover:opacity-100' alt={project.name} />
               </div>
             </Link>
-            <h3 className='my-8 font-bold tracking-widest py-2 text-[#9cc9e3] text-4xl'>{project.title}</h3>
-            <p className='text-start leading-snug px-14 tracking-widest md:h-[180px] animate-fade-in'>
-              {project.description}
-            </p>
+            <h3 className='my-8 font-bold font-sans py-2 text-5xl' style={{ color: project.color }}>{project.title}</h3>
+            <div className=''>
+              <p className='text-start leading-[2.8rem] px-14 tracking-widest md:h-[240px] animate-fade-in'>
+                {project.description}
+              </p>
+            </div>
             <a href={project.visit} target="_blank" rel="noreferrer">
               <Button text="View Demo" className='project-btn !w-[90%] !mx-auto !my-8 btn-grad' />
             </a>
@@ -26,7 +28,7 @@ const Projects = (): JSX.Element => {
               <div className='my-12'>Stack</div>
               <ul className='flex flex-wrap gap-x-4 md:gap-x-8 h-32 overflow-hidden px-8 animate-fade-in'>
                 {project.tags.map((tag, idx) => (
-                  <li className='text-red-500 text-2xl md:text-3xl leading-tight' key={idx}>{tag}</li>
+                  <li className='text-emerald-300 text-2xl md:text-3xl leading-tight' key={idx}>{tag}</li>
                 ))}
               </ul>
             </div>
