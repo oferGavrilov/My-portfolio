@@ -5,10 +5,9 @@
             "description": "A Real-time Messaging Platform powered by React, Vite, Node.js Express and Typescript. Seamlessly integrates sockets for live chat experience, One-on-one chats, groups chats, enriched by diverse message formats including text, audio, images and files.Using MongoDB with Mongoose for data integrity, user authentication and for advanced and scalable communication.",
             "images": [
                   "/images/rolling/large.png",
-                  "/images/rolling/large.png",
                   "/images/rolling/desktop.png",
-                  "/images/rolling/tablet.jpg",
-                  "/images/rolling/mobile.jpg",
+                  "/images/rolling/tablet.png",
+                  "/images/rolling/mobile.png",
                   "/images/rolling/chat-light.png",
                   "/images/rolling/mockup-desktop.png",
                   "/images/rolling/mockup-mobile.png"

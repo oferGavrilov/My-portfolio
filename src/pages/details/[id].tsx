@@ -23,10 +23,9 @@ const ProjectDetails: NextPage<ProjectDetailsProps> = ({ project }) => {
       </Link>
       <section className='fade'>
         <div className="hero-container">
-          <img className="project-image hero-img-large" src={project?.images[0]} alt={project?.title} />
-          <img className="project-image hero-img-desktop" src={project?.images[1]} alt={project?.title} />
-          <img className="project-image hero-img-tablet" src={project?.images[2]} alt={project?.title} />
-          <img className="project-image hero-img-mobile" src={project?.images[3]} alt={project?.title} />
+          <img className="project-image hidden lg:block" src={project.images[0]} alt={project.title + '-large'} />
+          <img className={`project-image md:block lg:hidden ${project.name === 'airbnb' && '!object-top'}`} src={project.images[2]} alt={project.title + '-tablet'} />
+          <img className={`project-image md:hidden ${project.name === 'airbnb' && '!object-top'}`} src={project.images[3]} alt={project.title + '-mobile'} />
         </div>
         <div className='flex flex-col text-[#dce3e4] absolute -bottom-24 mx-10 md:mx-20 lg:mx-32'>
           <h2 style={{ color: project?.color }} className="text-[4.25rem] py-6 font-bold custom-shadow">{project?.title}</h2>
@@ -42,8 +41,9 @@ const ProjectDetails: NextPage<ProjectDetailsProps> = ({ project }) => {
           <h2 style={{ color: project?.color, textShadow: `0px 3px 11px ${project?.color}` }} className='text-5xl font-bold py-8'>Responsive Design</h2>
           <p className='pb-14 custom-paragraph'>The {project?.title} application using Responsive design for any device sizes.</p>
           <div className='flex flex-col md:flex-row justify-center md:justify-evenly items-center gap-24'>
-            <img className='mockup-img' src={project?.images[5]} alt={project?.title} />
-            <img className='mockup-img' src={project?.images[6]} style={{ width: '180px' }} alt={project?.title} />
+            {/* <img className='mockup-img' src={project.images[7]} alt={project.title + '-large'} /> */}
+            <img className='mockup-img' src={project.images[5]} alt={project.title} />
+            <img className='mockup-img' src={project.images[6]} style={{ width: '180px' }} alt={project?.title} />
           </div>
         </div>
         <div className='py-32 flex gap-x-16 md:gap-x-32 justify-center text-2xl md:text-4xl tracking-wider uppercase font-mono'>
