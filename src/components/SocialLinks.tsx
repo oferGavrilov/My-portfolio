@@ -1,21 +1,21 @@
 import React from 'react'
 
-import { IconButton } from '@mui/material'
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
-import { CgMail } from 'react-icons/cg'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import MailOutlineIcon from '@mui/icons-material/MailOutline'
+import { AiFillGithub } from 'react-icons/ai'
 
 function SocialLinks (): JSX.Element {
   return (
-    <div className='flex'>
-      <IconButton color='inherit' href='https://github.com/oferGavrilov' target={'_blank'}>
-        <AiFillGithub className='social-link' size={'3.5rem'} />
-      </IconButton>
-      <IconButton color='primary' href='https://www.linkedin.com/in/ofergavrilov/' target={'_blank'}>
-        <AiFillLinkedin className='social-link' size={'3.5rem'} />
-      </IconButton>
-      <IconButton href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ofergavri@gmail.com' target={'_blank'}>
-        <CgMail className='social-link text-red-500' size={'3.5rem'} />
-      </IconButton>
+    <div className='flex items-center gap-x-5'>
+      <a className='social-link' href='https://github.com/oferGavrilov' target={'_blank'} rel="noreferrer">
+        <AiFillGithub size={'3.5rem'} />
+      </a>
+      <a color='primary' href='https://www.linkedin.com/in/ofergavrilov/' className='social-link ' target={'_blank'} rel="noreferrer">
+        <LinkedInIcon className='!text-6xl text-[#40adf6]' color='inherit' />
+      </a>
+      <a href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ofergavri@gmail.com' className='social-link text-red-500' target={'_blank'} rel="noreferrer">
+        <MailOutlineIcon className='!text-6xl' />
+      </a>
     </div>
   )
 }

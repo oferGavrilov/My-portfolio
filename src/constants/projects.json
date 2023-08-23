@@ -1,17 +1,8 @@
 [
       {
             "title": "Rolling",
-            "name": "myday",
+            "name": "rolling",
             "description": "A Real-time Messaging Platform powered by React, Vite, Node.js Express and Typescript. Seamlessly integrates sockets for live chat experience, One-on-one chats, groups chats, enriched by diverse message formats including text, audio, images and files.Using MongoDB with Mongoose for data integrity, user authentication and for advanced and scalable communication.",
-            "images": [
-                  "/images/rolling/large.png",
-                  "/images/rolling/desktop.png",
-                  "/images/rolling/tablet.png",
-                  "/images/rolling/mobile.png",
-                  "/images/rolling/chat-light.png",
-                  "/images/rolling/mockup-desktop.png",
-                  "/images/rolling/mockup-mobile.png"
-            ],
             "color": "#0099ff",
             "architecture": "This application build with react for front-end side using Redux for state management, Scss & MUI for styling, Axios for HTTP requests, Node.js & Express framework for backend side using routing, request handling and middleware management, MongoDB for database and Mongoose for modeling data. ",
             "tags": [
@@ -27,7 +18,13 @@
                   "Mongoose",
                   "JWT"
             ],
-            "mainImg": "/images/rolling/chat-light.png",
+            "largeImg":"https://res.cloudinary.com/dqkstk6dw/image/upload/v1692792550/Portfolio/chat-light_vhyccp.png",
+            "tabletImg":"https://res.cloudinary.com/dqkstk6dw/image/upload/v1692792610/Portfolio/chat-light-tablet_dryxah.png",
+            "mobileImg":"https://res.cloudinary.com/dqkstk6dw/image/upload/v1692792644/Portfolio/chat-light-mobile_yykfog.png",
+            "mainImg": "https://res.cloudinary.com/dqkstk6dw/image/upload/v1692792550/Portfolio/chat-light_vhyccp.png",
+            "mockupDesktop":"https://res.cloudinary.com/dqkstk6dw/image/upload/v1692792806/Portfolio/mockup-large_csnb89.png",
+            "mockupLaptop":"https://res.cloudinary.com/dqkstk6dw/image/upload/v1692792742/Portfolio/mockup-desktop_dwtzwn.png",
+            "mockupMobile":"https://res.cloudinary.com/dqkstk6dw/image/upload/v1692792768/Portfolio/smartmockups_llmq0rbo_i10kla.png",
             "source": "https://github.com/oferGavrilov/Rolling-chat-messenger",
             "visit": "https://rolling-chat-messenger.vercel.app",
             "id": "1"
@@ -36,15 +33,6 @@
             "title": "Airbnb",
             "name": "airbnb",
             "description": "Vacation rental application to find and rent places around the world, in this app you can become a host and post your place to everybody or pick a place for your next vacation. built with Angular, Node.js, Express & MongoDB. The app is a clone of Airbnb, it includes a map, advanced search, user authentication, i18n and more.",
-            "images": [
-                  "/images/airbnb/large.png",
-                  "/images/airbnb/desktop.png",
-                  "/images/airbnb/tablet.jpg",
-                  "/images/airbnb/mobile.jpg",
-                  "/images/airbnb/airbnb.png",
-                  "/images/airbnb/mockup-desktop.png",
-                  "/images/airbnb/mockup-mobile.png"
-            ],
             "color": "#F05252",
             "architecture": "This application built with Angular for front-end side using MVC architecture, Rxjs for asynchronous programming to handle events, SCSS for styling, RestAPI for HTTP methods, Node.js & Express framework for backend side using routing, request handling and middleware management, MongoDB for database and Mongoose for modeling data.",
             "tags": [
@@ -62,7 +50,13 @@
                   "JWT",
                   "MongoDB"
             ],
-            "mainImg": "/images/airbnb/airbnb.png",
+            "largeImg":"https://res.cloudinary.com/dqkstk6dw/image/upload/v1692793209/Portfolio/Airbnb/large_hphieo.png",
+            "tabletImg":"https://res.cloudinary.com/dqkstk6dw/image/upload/v1692793230/Portfolio/Airbnb/tablet_gpttma.jpg",
+            "mobileImg":"https://res.cloudinary.com/dqkstk6dw/image/upload/v1692793246/Portfolio/Airbnb/mobile_pmfwdp.jpg",
+            "mainImg": "https://res.cloudinary.com/dqkstk6dw/image/upload/v1692793699/Portfolio/Airbnb/airbnb_lqlx2k.png",
+            "mockupDesktop":"https://res.cloudinary.com/dqkstk6dw/image/upload/v1692793823/Portfolio/Airbnb/smartmockups_llnpq0ep_yg8can.png",
+            "mockupLaptop":"https://res.cloudinary.com/dqkstk6dw/image/upload/v1692793294/Portfolio/Airbnb/mockup-desktop_xxqvqm.png",
+            "mockupMobile":"https://res.cloudinary.com/dqkstk6dw/image/upload/v1692793308/Portfolio/Airbnb/mockup-mobile_s86put.png",
             "source": "https://github.com/oferGavrilov/AirBNB-clone",
             "visit": "https://airbnb-rktw.onrender.com/#/",
             "id": "2"
@@ -71,15 +65,6 @@
             "title": "My-Day",
             "name": "myday",
             "description": "Task managment application inspired by Monday.com, this project produced for manage projects and tasks in each way you choose The app is built with React, Redux, Node.js, Express & MongoDB. It includes user authentication, drag & drop, end to end testing, high security and more.",
-            "images": [
-                  "/images/myday/large.png",
-                  "/images/myday/desktop.png",
-                  "/images/myday/tablet.jpg",
-                  "/images/myday/mobile.jpg",
-                  "/images/myday/myday.png",
-                  "/images/myday/mockup-desktop.png",
-                  "/images/myday/mockup-mobile.png"
-            ],
             "color": "#2db5ff",
             "architecture": "This application build with react for front-end side using Redux for state management, Scss & MUI for styling, Axios for HTTP requests, Node.js & Express framework for backend side using routing, request handling and middleware management, MongoDB for database and Mongoose for modeling data. ",
             "tags": [
@@ -97,7 +82,13 @@
                   "MongoDB",
                   "Jest"
             ],
-            "mainImg": "/images/myday/myday.png",
+            "largeImg":"https://res.cloudinary.com/dqkstk6dw/image/upload/v1692793375/Portfolio/My-day/large_iiogtf.png",
+            "tabletImg":"https://res.cloudinary.com/dqkstk6dw/image/upload/v1692793392/Portfolio/My-day/tablet_cvyuvh.jpg",
+            "mobileImg":"https://res.cloudinary.com/dqkstk6dw/image/upload/v1692793399/Portfolio/My-day/mobile_eolctx.jpg",
+            "mockupDesktop":"https://res.cloudinary.com/dqkstk6dw/image/upload/v1692793909/Portfolio/My-day/smartmockups_llnpryb9_h7qzgx.png",
+            "mockupLaptop":"https://res.cloudinary.com/dqkstk6dw/image/upload/v1692793413/Portfolio/My-day/mockup-desktop_z7kr7o.png",
+            "mockupMobile":"https://res.cloudinary.com/dqkstk6dw/image/upload/v1692793427/Portfolio/My-day/mockup-mobile_jm7nxc.png",
+            "mainImg": "https://res.cloudinary.com/dqkstk6dw/image/upload/v1692793466/Portfolio/My-day/myday_g43sas.png",
             "source": "https://github.com/idandavid1/My-Day",
             "visit": "https://monday-8oy3.onrender.com/",
             "id": "0"
@@ -106,15 +97,6 @@
             "title": "Fafos",
             "name": "fafos",
             "description": "Fafos is a e-commerce application built with Next.JS, React, Typescript, Firebase, MongoDB. This app includes a shopping cart, user authentication, admin panel, and more.",
-            "images": [
-                  "/images/fafos/fafos-large.jpg",
-                  "/images/fafos/fafos-desktop.jpg",
-                  "/images/fafos/fafos-tablet.jpg",
-                  "/images/fafos/fafos-mobile.jpg",
-                  "/images/fafos/fafos.jpg",
-                  "/images/fafos/mockup-desktop.png",
-                  "/images/fafos/mockup-mobile.png"
-            ],
             "color": "#ab54e8ab",
             "architecture": "This application built with Next.js for using SSR, React for frontend side, TypeScript as programming language React-Context for state management, Tailwind CSS for styling, RestAPI for HTTP requests and methods manipulation andFirebase for user authentication.",
             "tags": [
@@ -126,11 +108,16 @@
                   "Vercel",
                   "Firebase",
                   "React-Context",
-                  "React-player",
                   "SSR",
                   "SEO",
                   "MongoDB"
             ],
+            "largeImg":"https://res.cloudinary.com/dqkstk6dw/image/upload/v1692793506/Portfolio/fafos/fafos-large_ihpn7r.jpg",
+            "tabletImg":"https://res.cloudinary.com/dqkstk6dw/image/upload/v1692794269/Portfolio/fafos/fafos-mobile2_nmi641.jpg",
+            "mobileImg":"https://res.cloudinary.com/dqkstk6dw/image/upload/v1692793556/Portfolio/fafos/fafos-mobile_eogm5j.jpg",
+            "mockupDesktop":"https://res.cloudinary.com/dqkstk6dw/image/upload/v1692794190/Portfolio/fafos/smartmockups_llnpxvsm_zwo7dr.png",
+            "mockupLaptop":"https://res.cloudinary.com/dqkstk6dw/image/upload/v1692793581/Portfolio/fafos/mockup-desktop_ur9rtb.png",
+            "mockupMobile":"https://res.cloudinary.com/dqkstk6dw/image/upload/v1692793592/Portfolio/fafos/mockup-mobile_oewhx6.png",
             "mainImg": "/images/fafos/fafos.jpg",
             "source": "https://github.com/oferGavrilov/Fafos-webshop",
             "visit": "https://fafos-webshop.vercel.app/",
