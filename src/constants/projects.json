@@ -118,7 +118,7 @@
             "mockupDesktop":"https://res.cloudinary.com/dqkstk6dw/image/upload/v1692794190/Portfolio/fafos/smartmockups_llnpxvsm_zwo7dr.png",
             "mockupLaptop":"https://res.cloudinary.com/dqkstk6dw/image/upload/v1692793581/Portfolio/fafos/mockup-desktop_ur9rtb.png",
             "mockupMobile":"https://res.cloudinary.com/dqkstk6dw/image/upload/v1692793592/Portfolio/fafos/mockup-mobile_oewhx6.png",
-            "mainImg": "/images/fafos/fafos.jpg",
+            "mainImg": "https://res.cloudinary.com/dqkstk6dw/image/upload/v1692793506/Portfolio/fafos/fafos-large_ihpn7r.jpg",
             "source": "https://github.com/oferGavrilov/Fafos-webshop",
             "visit": "https://fafos-webshop.vercel.app/",
             "id": "4"
