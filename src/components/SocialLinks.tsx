@@ -10,7 +10,7 @@ function SocialLinks (): JSX.Element {
       <a className='social-link' href='https://github.com/oferGavrilov' target={'_blank'} rel="noreferrer">
         <AiFillGithub size={'3.5rem'} />
       </a>
-      <a color='primary' href='https://www.linkedin.com/in/ofergavrilov/' className='social-link ' target={'_blank'} rel="noreferrer">
+      <a color='primary' href='https://www.linkedin.com/in/ofergavriel' className='social-link ' target={'_blank'} rel="noreferrer">
         <LinkedInIcon className='!text-6xl text-[#40adf6]' color='inherit' />
       </a>
       <a href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ofergavri@gmail.com' className='social-link text-red-500' target={'_blank'} rel="noreferrer">

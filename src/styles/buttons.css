@@ -8,13 +8,13 @@
       justify-content: center;
       align-items: center;
       margin: auto 0;
-      border-radius: 6em;
-      transition: all .2s;
+      border-radius: 5em;
+      transition: all .2s ease-in;
       border: none;
       font-family: inherit;
       font-weight: 500;
       color: #f1faee;
-      background-color: #39a7ed;
+      background-color: #0772b5;
 
       @media (min-width: 768px) {
             width: 150px;
@@ -22,13 +22,7 @@
 }
 
 .project-btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.project-btn:active {
-      transform: translateY(-1px);
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      letter-spacing: 2.5px;
 }
 
 .project-btn::after {
@@ -36,7 +30,7 @@
       display: inline-block;
       height: 100%;
       width: 100%;
-      border-radius: 100px;
+      border-radius: 2em;
       position: absolute;
       top: 0;
       left: 0;
@@ -45,13 +39,10 @@
 }
 
 .project-btn::after {
-      background-color: #39a7ed;
+      background-color: #82c1e7;
 }
 
-.project-btn:hover::after {
-      transform: scaleX(1.4) scaleY(1.6);
-      opacity: 0;
-}
+
 
 @-webkit-keyframes slide-bottom {
       0% {
@@ -100,7 +91,7 @@
       color: white;
       font-weight: bold;
       letter-spacing: 1px;
-      border-radius: 2em;
+      border-radius: 1em;
       display: block;
 }
 
@@ -114,7 +105,7 @@
 @media screen and (min-width: 770px) {
       .btn-grad {
             padding: 18px 24px;
-            font-size: 22px;
+            font-size: 18px;
             max-width: 262px;
       }
 }

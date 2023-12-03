@@ -3,12 +3,40 @@ import projects from '../../constants/projects.json'
 import { type Project } from '../../model/project.model'
 import Link from 'next/link'
 import { AiFillHome } from 'react-icons/ai'
+import { useState } from 'react'
 
 interface ProjectDetailsProps {
   project: Project | undefined
 }
 
+interface ImageState {
+  zoomed: boolean
+  clickPosition: { x: number, y: number }
+}
+
 const ProjectDetails: NextPage<ProjectDetailsProps> = ({ project }) => {
+  const [imageStates, setImageStates] = useState<ImageState[]>([
+    { zoomed: false, clickPosition: { x: 0, y: 0 } },
+    { zoomed: false, clickPosition: { x: 0, y: 0 } },
+    { zoomed: false, clickPosition: { x: 0, y: 0 } }
+    // Add more items for additional images
+  ])
+
+  const handleImageClick = (index: number, event: React.MouseEvent<HTMLImageElement>): void => {
+    const rect = event.currentTarget.getBoundingClientRect()
+    const x = event.clientX - rect.left
+    const y = event.clientY - rect.top
+
+    const newImageStates = [...imageStates]
+    newImageStates[index] = {
+      zoomed: !imageStates[index].zoomed,
+      clickPosition: { x, y }
+    }
+
+    setImageStates(newImageStates)
+  }
+
+
   if (!project) {
     return (
       <div>
@@ -33,10 +61,63 @@ const ProjectDetails: NextPage<ProjectDetailsProps> = ({ project }) => {
         </div>
       </section>
       <section className='bg-[#141414] pt-24 px-10 md:px-20 lg:px-32'>
+
         <div className='py-10'>
           <h2 style={{ color: project?.color, textShadow: `0px 3px 11px ${project?.color}` }} className='text-5xl font-bold py-8'>Architecture</h2>
           <p className='custom-paragraph'>{project?.architecture}</p>
+
+          {project.name === 'rolling' && (
+            <div className='py-12 flex flex-col w-full items-center'>
+              <div className='text-center'>
+                <h2 className='text-4xl pt-8 pb-4' style={{ color: project?.color }}>Frontend Components Architecture</h2>
+                <div className={`image-container${imageStates[0].zoomed ? ' zoomed z-10' : ''}`}>
+                  <img
+                    src="https://res.cloudinary.com/dqkstk6dw/image/upload/v1693131275/chat-app/frontent-components_l0y7pr.png"
+                    alt=""
+                    onClick={(event) => { handleImageClick(0, event) }}
+                    style={{
+                      transform: imageStates[0].zoomed ? 'scale(2)' : 'scale(1)',
+                      transformOrigin: `${imageStates[0].clickPosition.x}px ${imageStates[0].clickPosition.y}px`,
+                      transition: 'transform 0.2s ease-in-out'
+                    }}
+                  />
+                </div>
+              </div>
+              <div className='text-center'>
+                <h2 className='text-4xl pt-8 pb-4' style={{ color: project?.color }}>Frontend Services</h2>
+                <div className={`image-container${imageStates[1].zoomed ? ' zoomed z-10' : ''}`}>
+                  <img
+                    src="https://res.cloudinary.com/dqkstk6dw/image/upload/v1693215073/chat-app/frontend-services_lvgsd7.png"
+                    alt=""
+                    onClick={(event) => { handleImageClick(1, event) }}
+                    style={{
+                      transform: imageStates[1].zoomed ? 'scale(2)' : 'scale(1)',
+                      transformOrigin: `${imageStates[1].clickPosition.x}px ${imageStates[1].clickPosition.y}px`,
+                      transition: 'transform 0.2s ease-in-out'
+                    }}
+                  />
+                </div>
+              </div>
+              <div className='text-center'>
+                <h2 className='text-4xl pt-8 pb-4' style={{ color: project?.color }}>Backend Architecture</h2>
+                <div className={`image-container${imageStates[2].zoomed ? ' zoomed z-10' : ''}`}>
+                  <img
+                    src="https://res.cloudinary.com/dqkstk6dw/image/upload/v1693215549/chat-app/backend-architecture_z8p18j.png"
+                    alt=""
+                    onClick={(event) => { handleImageClick(2, event) }}
+                    style={{
+                      transform: imageStates[2].zoomed ? 'scale(1.8)' : 'scale(1)',
+                      transformOrigin: `${imageStates[2].clickPosition.x}px ${imageStates[2].clickPosition.y}px`,
+                      transition: 'transform 0.2s ease-in-out'
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+          )}
+
         </div>
+
         <div className='py-10'>
           <h2 style={{ color: project?.color, textShadow: `0px 3px 11px ${project?.color}` }} className='text-5xl font-bold py-8'>Responsive Design</h2>
           <p className='pb-14 custom-paragraph'>The {project?.title} application using Responsive design for any device sizes.</p>

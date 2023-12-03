@@ -65,29 +65,30 @@
             "names": [
                   "JavaScript",
                   "TypeScript",
-                  "Python"
+                  "Python",
+                  "C#"
             ],
             "imgUrls": [
                   "https://skillicons.dev/icons?i=js&theme=light",
                   "https://skillicons.dev/icons?i=ts&theme=light",
-                  "https://skillicons.dev/icons?i=py&theme=dark"
+                  "https://skillicons.dev/icons?i=py&theme=dark",
+                  "https://skillicons.dev/icons?i=cs&theme=dark"
             ]
       },
       {
             "id": "6",
-            "type": "Tools",
+            "type": "Libraries & Tools",
             "names": [
                   "Docker",
-                  "Visual Studio Code",
                   "Git & GitHub",
-                  "Postman"
-                  
+                  "Redux", 
+                  "RxJS"
             ],
             "imgUrls": [
                   "/images/tech/docker.png",
-                  "/images/tech/vsc.png",
-                  "/images/tech/postman.png",
-                  "/images/tech/git.png"
+                  "/images/tech/git.png",
+                  "https://skillicons.dev/icons?i=redux&theme=dark",
+                  "https://skillicons.dev/icons?i=rxjs&theme=dark"
             ]
       }
 ]

@@ -24,6 +24,7 @@
     ],
     "rules": {
         "indent": "off",
+        "padded-blocks": "off",
         "no-unused-vars": "off",
         "react/react-in-jsx-scope": "off",
         "space-before-function-paren": [
@@ -34,13 +35,14 @@
                 "asyncArrow": "always"
             }
         ],
-        "no-trailing-spaces": "warn",
+        "no-trailing-spaces": "off",
         "no-multiple-empty-lines": "off",
         "@typescript-eslint/strict-boolean-expressions": "off",
         "@typescript-eslint/indent": "off",
         "@typescript-eslint/restrict-plus-operands": "off",
         "@next/next/no-img-element": "off",
         "@typescript-eslint/restrict-template-expressions": "off",
-        "react/prop-types": "off"
+        "react/prop-types": "off",
+        "@typescript-eslint/semi": "warn"
     }
 }
