@@ -3,6 +3,7 @@ import Hero from '../components/Hero'
 import Projects from '../components/Projects'
 import Technologies from '../components/Technologies'
 import Layout from '../components/Layout'
+import Services from '../components/Services'
 
 const Home = (): JSX.Element => {
   return (
@@ -11,6 +12,7 @@ const Home = (): JSX.Element => {
         <Hero />
         <BgAnimation />
       </main>
+      {/* <Services /> */}
       <Projects />
       <Technologies />
     </Layout >

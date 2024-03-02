@@ -8,13 +8,13 @@ function SocialLinks (): JSX.Element {
   return (
     <div className='flex items-center gap-x-5'>
       <a className='social-link' href='https://github.com/oferGavrilov' target={'_blank'} rel="noreferrer">
-        <AiFillGithub size={'3.5rem'} />
+        <AiFillGithub  className='text-5xl' />
       </a>
       <a color='primary' href='https://www.linkedin.com/in/ofergavriel' className='social-link ' target={'_blank'} rel="noreferrer">
-        <LinkedInIcon className='!text-6xl text-[#40adf6]' color='inherit' />
+        <LinkedInIcon className='!text-5xl text-[#40adf6]' color='inherit' />
       </a>
       <a href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ofergavri@gmail.com' className='social-link text-red-500' target={'_blank'} rel="noreferrer">
-        <MailOutlineIcon className='!text-6xl' />
+        <MailOutlineIcon className='!text-5xl' />
       </a>
     </div>
   )

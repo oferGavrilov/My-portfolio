@@ -66,6 +66,24 @@ html {
             @apply flex flex-col w-max gap-6 text-center;
        }
 
+       /* Services */
+       .service-card {
+
+       }
+       .service-ball {
+            @apply flex items-center justify-center w-36 h-36 md:w-44 md:h-44 lg:w-56 lg:h-56 bg-custom-gradient rounded-full mx-auto transition-all duration-300 ease-in-out;
+       }
+       .service-ball:hover {
+            @apply scale-110;
+       }
+
+       .service-ball:hover svg {
+            @apply animate-bounce-once;
+       }
+       .service-description {
+            @apply text-center text-xl -tracking-tighter max-w-xs;
+       }
+
       /* Footer */
 
       .footer-title {
@@ -84,7 +102,7 @@ html {
       /* Projects */
       .grid-container {
             @apply flex flex-col mx-auto p-2 pb-24 md:grid md:pt-12 md:px-12 md:pb-24 md:place-items-center gap-y-24 gap-x-20 ;
-                  grid-template-columns: repeat(auto-fit, minmax(470px,1fr ));
+                  grid-template-columns: repeat(auto-fit, minmax(400px,1fr ));
 
       }
 

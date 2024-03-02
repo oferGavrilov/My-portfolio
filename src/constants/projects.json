@@ -4,7 +4,7 @@
             "name": "rolling",
             "description": "A Real-time Messaging Platform powered by React, Vite, Node.js Express and Typescript. Seamlessly integrates sockets for live chat experience, One-on-one chats, groups chats, enriched by diverse message formats including text, audio, images and files. Using MongoDB with Mongoose for data integrity, user authentication and for advanced and scalable communication.",
             "color": "#0099ff",
-            "architecture": "This application build with react for front-end side using Redux for state management, Scss & MUI for styling, Axios for HTTP requests, Node.js & Express framework for backend side using routing, request handling and middleware management, MongoDB for database and Mongoose for modeling data. ",
+            "architecture": "This application build with React + Vite + TypeScript for front-end side using Zustand for state management, TailwindCSS for styling, Socket.io for real-time communication, Axios for HTTP requests, Node.js + Express + Typescript for backend side, request handling and middleware management, NodeCron for schedule operations, Nodemailer for Email notification, JWT for Authentication & Authorization, MongoDB for database and Mongoose for modeling data. ",
             "tags": [
                   "React",
                   "Zustand",
@@ -27,7 +27,7 @@
             "mockupMobile":"https://res.cloudinary.com/dqkstk6dw/image/upload/v1692792768/Portfolio/smartmockups_llmq0rbo_i10kla.png",
             "source": "https://github.com/oferGavrilov/Rolling-chat-messenger",
             "visit": "https://rolling-chat-messenger.vercel.app",
-            "id": "1"
+            "id": "12624236165"
       },
       {
             "title": "Airbnb",
@@ -59,7 +59,7 @@
             "mockupMobile":"https://res.cloudinary.com/dqkstk6dw/image/upload/v1692793308/Portfolio/Airbnb/mockup-mobile_s86put.png",
             "source": "https://github.com/oferGavrilov/AirBNB-clone",
             "visit": "https://airbnb-rktw.onrender.com/#/",
-            "id": "2"
+            "id": "2125123631"
       },
       {
             "title": "My-Day",
@@ -91,7 +91,7 @@
             "mainImg": "https://res.cloudinary.com/dqkstk6dw/image/upload/v1692793466/Portfolio/My-day/myday_g43sas.png",
             "source": "https://github.com/idandavid1/My-Day",
             "visit": "https://monday-8oy3.onrender.com/",
-            "id": "0"
+            "id": "0135132215"
       },
       {
             "title": "Fafos",
@@ -121,6 +121,6 @@
             "mainImg": "https://res.cloudinary.com/dqkstk6dw/image/upload/v1692793506/Portfolio/fafos/fafos-large_ihpn7r.jpg",
             "source": "https://github.com/oferGavrilov/Fafos-webshop",
             "visit": "https://fafos-webshop.vercel.app/",
-            "id": "4"
+            "id": "41353151513"
       }
 ]

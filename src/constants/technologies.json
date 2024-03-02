@@ -20,13 +20,13 @@
                   "Node.js",
                   "Express",
                   "Nest.js",
-                  "Django"
+                  ".NET"
             ],
             "imgUrls": [
                   "https://skillicons.dev/icons?i=nodejs&theme=dark",
                   "https://skillicons.dev/icons?i=express&theme=dark",
                   "https://skillicons.dev/icons?i=nestjs&theme=dark",
-                  "https://skillicons.dev/icons?i=django&theme=dark"
+                  "https://skillicons.dev/icons?i=net&theme=dark"
             ]
       },
       {
@@ -35,12 +35,14 @@
             "names": [
                   "CSS",
                   "SASS",
-                  "Tailwind CSS"
+                  "Tailwind CSS",
+                  "Material-UI"
             ],
             "imgUrls": [
-                  "https://skillicons.dev/icons?i=css&theme=light",
-                  "https://skillicons.dev/icons?i=sass&theme=light",
-                  "https://skillicons.dev/icons?i=tailwind"
+                  "https://skillicons.dev/icons?i=css&theme=dark",
+                  "https://skillicons.dev/icons?i=sass&theme=dark",
+                  "https://skillicons.dev/icons?i=tailwindcss&theme=dark",
+                  "https://skillicons.dev/icons?i=mui&theme=dark"
             ]
       },
       {
@@ -50,13 +52,13 @@
                   "MySQL",
                   "MongoDB",
                   "PostgreSQL",
-                  "Firebase"
+                  "Cassandra"
             ],
             "imgUrls": [
                   "https://skillicons.dev/icons?i=mysql&theme=dark",
                   "https://skillicons.dev/icons?i=mongodb&theme=light",
                   "https://skillicons.dev/icons?i=postgresql&theme=dark",
-                  "https://skillicons.dev/icons?i=firebase&theme=dark"
+                  "https://skillicons.dev/icons?i=cassandra&theme=light"
             ]
       },
       {
@@ -65,13 +67,11 @@
             "names": [
                   "JavaScript",
                   "TypeScript",
-                  "Python",
                   "C#"
             ],
             "imgUrls": [
                   "https://skillicons.dev/icons?i=js&theme=light",
                   "https://skillicons.dev/icons?i=ts&theme=light",
-                  "https://skillicons.dev/icons?i=py&theme=dark",
                   "https://skillicons.dev/icons?i=cs&theme=dark"
             ]
       },

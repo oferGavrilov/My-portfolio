@@ -1,7 +1,7 @@
 import type React from 'react'
 
 const BackgroundAnimation: React.FC = () => (
-  <div>
+  <div className='hidden md:block'>
     <svg
       className="BgAnimation__svg"
       viewBox="0 0 602 602"
