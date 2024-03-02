@@ -1,14 +1,11 @@
 import React from 'react'
-import { BsFillLightningFill } from "react-icons/bs";
-import { BsDisplay } from "react-icons/bs";
-import { GrSecure } from "react-icons/gr";
-import { RiSecurePaymentLine } from "react-icons/ri";
-import { LiaRocketSolid } from "react-icons/lia";
-import SecondTitle from './custom/SecondTitle';
-export default function Services() {
+import { BsFillLightningFill, BsDisplay } from 'react-icons/bs'
+import { RiSecurePaymentLine } from 'react-icons/ri'
+import { LiaRocketSolid } from 'react-icons/lia'
+import SecondTitle from './custom/SecondTitle'
+export default function Services(): JSX.Element {
     return (
         <div className='min-h-screen px-12 py-12 lg:px-40'>
-            {/* <h2 className='text-center uppercase text-5xl font-ralewayBold block'>About</h2> */}
             <div className='mx-auto py-16'>
                 <SecondTitle title='Services' />
             </div>

@@ -1,5 +1,4 @@
 import React from 'react'
-
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import MailOutlineIcon from '@mui/icons-material/MailOutline'
 import { AiFillGithub } from 'react-icons/ai'
@@ -8,7 +7,7 @@ function SocialLinks (): JSX.Element {
   return (
     <div className='flex items-center gap-x-5'>
       <a className='social-link' href='https://github.com/oferGavrilov' target={'_blank'} rel="noreferrer">
-        <AiFillGithub  className='text-5xl' />
+        <AiFillGithub className='text-5xl' />
       </a>
       <a color='primary' href='https://www.linkedin.com/in/ofergavriel' className='social-link ' target={'_blank'} rel="noreferrer">
         <LinkedInIcon className='!text-5xl text-[#40adf6]' color='inherit' />

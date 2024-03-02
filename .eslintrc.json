@@ -27,14 +27,6 @@
         "padded-blocks": "off",
         "no-unused-vars": "off",
         "react/react-in-jsx-scope": "off",
-        "space-before-function-paren": [
-            "error",
-            {
-                "anonymous": "always",
-                "named": "always",
-                "asyncArrow": "always"
-            }
-        ],
         "no-trailing-spaces": "off",
         "no-multiple-empty-lines": "off",
         "@typescript-eslint/strict-boolean-expressions": "off",
@@ -43,6 +35,8 @@
         "@next/next/no-img-element": "off",
         "@typescript-eslint/restrict-template-expressions": "off",
         "react/prop-types": "off",
-        "@typescript-eslint/semi": "warn"
+        "@typescript-eslint/semi": "warn",
+        "space-before-function-paren": "off",
+        "@typescript-eslint/space-before-function-paren": "off"
     }
 }

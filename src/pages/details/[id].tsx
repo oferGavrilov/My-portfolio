@@ -3,7 +3,6 @@ import projects from '../../constants/projects.json'
 import { type Project } from '../../model/project.model'
 import Link from 'next/link'
 import { AiFillHome } from 'react-icons/ai'
-import { useState } from 'react'
 
 interface ProjectDetailsProps {
   project: Project | undefined
@@ -60,14 +59,14 @@ const ProjectDetails: NextPage<ProjectDetailsProps> = ({ project }) => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default ProjectDetails;
+export default ProjectDetails
 
 export const getServerSideProps: GetServerSideProps<ProjectDetailsProps> = async (context) => {
-  const { id } = context.params ?? {};
-  const project: Project | undefined = projects.find((p) => p.id === id);
+  const { id } = context.params ?? {}
+  const project: Project | undefined = projects.find((p) => p.id === id)
 
   if (!project) {
     return {
@@ -75,12 +74,12 @@ export const getServerSideProps: GetServerSideProps<ProjectDetailsProps> = async
         destination: '/',
         permanent: false
       }
-    };
+    }
   }
 
   return {
     props: {
       project
-    },
-  };
-};
+    }
+  }
+}
